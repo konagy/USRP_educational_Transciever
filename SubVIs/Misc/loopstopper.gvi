@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="064B5F091970EED1C0FD9338DFC031E9" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"&lt;p&gt;This VI functions as an FGV (Functional Global Variable)&lt;br /&gt;\nIf gets any error or stop boolean is true it passes it to an OR gate. The third input is aloopback of the OR gate&amp;#39;s output through a shift register, so it will keep its state after a true value recieved.&lt;/p&gt;"</p.UserDescription>
+		<Icon Id="2" ListViewIconCrop="0 0 20 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]20">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="76" Left="[float]0" TemplateName="BlueNoText" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff596574" Id="77" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe4f7fa" Id="78" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#ffffffff" Top="[float]0" />
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]14">
+					<Rectangle EditMode="[ShapeEditMode]EditablePath" Fill="[SMSolidColorBrush]#ff007133" Height="[float]40" Id="79" Left="[float]-2" MinHeight="[float]1" MinWidth="[float]1" Opacity="[float]1" RadiusX="[float]4" RadiusY="[float]4" Stroke="[SMSolidColorBrush]#00ffffff" StrokeThickness="[float]1" Top="[float]-4" Width="[float]20" />
+					<Path Data="[PathGeometry]M 4.551661,5.047053 L 0.6502373,6.904408 L 0.6502373,5.047053 L 4.551661,5.047053 Z M 0,1.991704 L 5.701281,3.920257 L 1.72573,0.06500743 L 0,1.991704 Z M 7.099941,10 L 9.949281,10 L 9.949281,8.227464 L 7.099941,8.227464 L 7.099941,10 Z M 7.051173,0 L 7.375642,7.118623 L 9.675531,7.118623 L 10,0 L 7.051173,0 Z" EditMode="[ShapeEditMode]FixedPath" Fill="[SMSolidColorBrush]#ff262626" Id="66" Left="[float]1" MinHeight="[float]1" MinWidth="[float]1" Top="[float]2" />
+					<Path Data="[PathGeometry]M 7.905944,0 L 11,3.094056 L 11,7.906555 L 7.905944,11 L 3.093444,11 L 0,7.906555 L 0,3.094056 L 3.093444,0 L 7.905944,0 Z" EditMode="[ShapeEditMode]FixedPath" Fill="[SMSolidColorBrush]#ffee1c25" Height="[float]11" Id="67" Left="[float]2" MinHeight="[float]1" MinWidth="[float]1" Top="[float]21" Width="[float]11" />
+				</Canvas>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="10" ListViewHeight="100" ListViewWidth="150" Width="20" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="16" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 65" Parameter="50" />
+			<ConnectorPaneTerminal Hotspot="20 5" ListViewHotspot="150 50" Parameter="27" />
+			<ConnectorPaneTerminal Hotspot="20 15" />
+			<ConnectorPaneTerminal Hotspot="20 25" />
+			<ConnectorPaneTerminal Hotspot="20 35" ListViewHotspot="150 80" Parameter="44" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0">
+			<Cluster BaseName="[string]Error" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]165" Id="17" Left="[float]0" Name="[string]Error In" Top="[float]0" Value="{DataItemBinding Id=16}" Width="[float]138" p4:ControlDefinitionChecksum="zmhsRUGWDTf2PX9vKcqFsw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Error\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]17" Id="18" Label="[UIModel]19" Left="[float]5" MinHeight="[float]16" MinWidth="[float]16" Top="[float]25" Value="{ClusterBinding FieldName=status}" Width="[float]19" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="19" LabelOwner="[UIModel]18" Left="[float]5" Text="[string]status" Top="[float]5" />
+				<NumericText Height="[float]22" Id="20" Label="[UIModel]21" Left="[float]50" MinHeight="[float]22" RadixVisibility="[SMVisibility]Visible" Top="[float]25" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]75" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="21" LabelOwner="[UIModel]20" Left="[float]50" Text="[string]code" Top="[float]5" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]80" Id="22" Label="[UIModel]23" Left="[float]5" Text="{ClusterBinding FieldName=source}" Top="[float]72" Width="[float]120" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="23" LabelOwner="[UIModel]22" Left="[float]5" Text="[string]source" Top="[float]52" />
+			</Cluster>
+			<Cluster BaseName="[string]Error" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]165" Id="28" Left="[float]0" Name="[string]Error Out" Top="[float]0" Value="{DataItemBinding Id=27}" Width="[float]138" p4:ControlDefinitionChecksum="zmhsRUGWDTf2PX9vKcqFsw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Error\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]17" Id="29" IsReadOnly="[bool]True" Label="[UIModel]30" Left="[float]5" MinHeight="[float]16" MinWidth="[float]16" Top="[float]25" Value="{ClusterBinding FieldName=status}" Width="[float]19" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="30" LabelOwner="[UIModel]29" Left="[float]5" Text="[string]status" Top="[float]5" />
+				<NumericText Height="[float]22" Id="31" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]32" Left="[float]50" MinHeight="[float]22" RadixVisibility="[SMVisibility]Visible" Top="[float]25" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]75" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="32" LabelOwner="[UIModel]31" Left="[float]50" Text="[string]code" Top="[float]5" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]80" Id="33" IsReadOnly="[bool]True" Label="[UIModel]34" Left="[float]5" Text="{ClusterBinding FieldName=source}" Top="[float]72" Width="[float]120" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="34" LabelOwner="[UIModel]33" Left="[float]5" Text="[string]source" Top="[float]52" />
+			</Cluster>
+			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="47" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Name="[string]Stop?" Shape="[LEDShape]Square" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=44}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="53" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]Stop Cond In" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=50}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="13">
+			<DataAccessor Bounds="380 300 40 15" DataItem="16" Id="15" Label="24" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="15" Bounds="331 300 44 14" Id="24" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Error In</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="530 300 40 15" DataItem="27" Id="25" Label="26" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="25" Bounds="575 300 52 14" Id="26" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Error Out</p.Text>
+			</NodeLabel>
+			<Wire Id="37" Joints="N(15:Value) h(5) B(1) N(25:Value) B(1) v(15) N(38:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<LogicalOr Bounds="465 315 25 30" Id="38" Terminals="o=49, c0t0v=37, c1t0v=55, c2t0v=56" VerticalChunkCount="3" />
+			<FeedbackNode Bounds="460 365 30 20" EnableTerminalVisible="False" Id="41" />
+			<DataAccessor Bounds="530 320 40 15" DataItem="44" Id="46" Label="48" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="46" Bounds="575 320 32 14" Id="48" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Stop?</p.Text>
+			</NodeLabel>
+			<Wire Id="49" Joints="N(38:o) h(5) B(1) N(46:Value) B(1) v(50) N(41:input)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="380 325 40 15" DataItem="50" Id="52" Label="54" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="52" Bounds="302 325 73 14" Id="54" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Stop Cond In</p.Text>
+			</NodeLabel>
+			<Wire Id="55" Joints="N(52:Value) N(38:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="56" Joints="N(41:output) h(-5) v(-35) N(38:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="480 353 12 10" DataType="Boolean" Facade="DockedConstantFacade" Id="58" Label="59" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>False</p.Data>
+				<BooleanBehavior />
+				<DockedConstantFacade UndockedSize="26 15" />
+			</Literal>
+			<NodeLabel AttachedTo="58" Bounds="480 353 0 0" Id="59" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>initial value</p.Text>
+			</NodeLabel>
+			<Wire Facade="WireInvisibleFacade" Id="60" Joints="N(58:Out) h(5) v(-3) h(-22) N(41:initial value)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="310 405 345 90" Id="80" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"This VI functions as an FGV (Functional Global Variable)\r\nIf gets any error or stop boolean is true it passes it to an OR gate. The third input is aloopback of the OR gate's output through a shift register, so it will keep its state after a true value recieved."</p.Text>
+			</Comment>
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<DataItem CallDirection="Input" CallIndex="0" DataType="Error" Id="16" Name="Error In" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Error\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="0" DataType="Error" Id="27" Name="Error Out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Error\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="Boolean" Id="44" Name="Stop?" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="Boolean" Id="50" Name="Stop Cond In" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+</SourceFile>

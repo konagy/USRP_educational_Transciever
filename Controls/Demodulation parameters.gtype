@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="58BB216000EABA82786A79B469381FE4" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@229e5236a2404a7c81d664f6c539eecc" Friends="" Id="1" xmlns="http://www.ni.com/MocCommon">
+		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+			<TypeDefinitionTarget TargetName="Burst\ Parameters\.gtype" />
+			<TypeDefinitionTarget TargetName="Coding\ and\ CRC\.gtype" />
+		</p.TypeDefinitionTargets>
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Demodulation parameters" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@229e5236a2404a7c81d664f6c539eecc" Id="80" Name="Demodulation parameters">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>
+						<Cluster>
+							<Field1>16</Field1>
+							<Field2>
+								<Array Lengths="0" />
+							</Field2>
+							<Field3>0</Field3>
+							<Field4>0</Field4>
+						</Cluster>
+					</Field1>
+					<Field2>
+						<Array Lengths="0" />
+					</Field2>
+					<Field3>
+						<Array Lengths="0" />
+					</Field3>
+					<Field4>1000_8_64250_</Field4>
+					<Field5>0_0_</Field5>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Burst\ Parameters\.gtype" />
+				<TypeDefinitionTarget TargetName="Coding\ and\ CRC\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="10" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="11" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,DefaultTarget,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="12" ModelDefinitionType="DefaultTarget" Name="Demodulation\ parameters\.gtype" NameTracksFileName="True">
+			<DefaultTarget />
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.PanelCommon.SourceModel.ControlDefinition,EmbeddedReference" Id="13" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="14" xmlns="http://www.ni.com/MocCommon">
+					<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@229e5236a2404a7c81d664f6c539eecc" Height="[float]659" Id="48" Label="[UIModel]79" Left="[float]374" Top="[float]75" Value="{DataItemBinding Id=80}" Width="[float]187" xmlns="http://www.ni.com/PanelCommon">
+						<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@4e9bc905a5964244af2e1481b2f3637e" Height="[float]211" Id="49" Label="[UIModel]50" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=PSK\ system\ parameters}" Width="[float]147">
+							<NumericText BaseName="[string]Numeric" Height="[float]22" Id="59" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]62" Left="[float]5" MinHeight="[float]22" Top="[float]22" Value="{ClusterBinding FieldName=samples\ per\ symbol\ (16)}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<ArrayViewer ArrayElement="[UIModel]77" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="60" Label="[UIModel]63" Left="[float]5" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]64" Value="{ClusterBinding FieldName=symbol\ map}" Width="[float]129">
+								<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+								<NumericText BaseName="[string]Numeric" Height="[float]22" Id="77" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]0" MinHeight="[float]22" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" Top="[float]0" Value="[ComplexDouble]0 + 0i" ValueType="[Type]ComplexDouble" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							</ArrayViewer>
+							<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="61" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]64" Left="[float]5" Top="[float]120" Value="{ClusterBinding FieldName=differential\ PSK}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<EnumSelectorInfo DisplayValue="[string]disable" Value="[ushort]0" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]enable" Value="[ushort]1" ValueType="[Type]UInt16" />
+							</EnumSelector>
+							<Label Height="[float]16" Id="62" LabelOwner="[UIModel]59" Left="[float]5" Text="[string]samples per symbol (16)" Top="[float]0" Width="[float]129" />
+							<Label Height="[float]16" Id="63" LabelOwner="[UIModel]60" Left="[float]5" Text="[string]symbol map" Top="[float]42" Width="[float]66" />
+							<Label Height="[float]16" Id="64" LabelOwner="[UIModel]61" Left="[float]5" Text="[string]differential PSK" Top="[float]100" Width="[float]81" />
+							<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Text Ring" Height="[float]22" Id="65" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]66" Left="[float]5" Top="[float]172" Value="{ClusterBinding FieldName=PSK\ type}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<EnumSelectorInfo DisplayValue="[string]normal" Value="[ushort]0" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]shifted" Value="[ushort]1" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]offset" Value="[ushort]2" ValueType="[Type]UInt16" />
+							</EnumSelector>
+							<Label Height="[float]16" Id="66" LabelOwner="[UIModel]65" Left="[float]5" Text="[string]PSK type" Top="[float]150" Width="[float]47" />
+						</Cluster>
+						<Label Height="[float]16" Id="50" LabelOwner="[UIModel]49" Left="[float]5" Text="[string]PSK system parameters" Top="[float]2" Width="[float]123" />
+						<ArrayViewer ArrayElement="[UIModel]75" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="53" Label="[UIModel]54" Left="[float]5" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]259" Value="{ClusterBinding FieldName=pulse\ shaping\ filter\ coefficients}" Width="[float]114">
+							<p.DefaultElementValue>0x0</p.DefaultElementValue>
+							<NumericText Height="[float]22" Id="75" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]53" MinHeight="[float]22" Name="[string]Child" Top="[float]7" Value="[double]0" ValueType="[Type]Double" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ArrayViewer>
+						<Label Height="[float]16" Id="54" LabelOwner="[UIModel]53" Left="[float]5" Text="[string]pulse shaping filter coefficients" Top="[float]236" Width="[float]164" />
+						<ArrayViewer ArrayElement="[UIModel]76" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="55" Label="[UIModel]56" Left="[float]5" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]318" Value="{ClusterBinding FieldName=matched\ filter\ coefficients}" Width="[float]114">
+							<p.DefaultElementValue>0x0</p.DefaultElementValue>
+							<NumericText Height="[float]22" Id="76" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]53" MinHeight="[float]22" Name="[string]Child" Top="[float]31" Value="[double]0" ValueType="[Type]Double" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						</ArrayViewer>
+						<Label Height="[float]16" Id="56" LabelOwner="[UIModel]55" Left="[float]5" Text="[string]matched filter coefficients" Top="[float]295" Width="[float]137" />
+						<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@1d5f999085f442bbbef89b4d2613fdf5" Height="[float]147" Id="86" Label="[UIModel]93" Left="[float]5" Top="[float]377" Value="{ClusterBinding FieldName=Burst\ Parameters}" Width="[float]128" p7:ControlDefinitionChecksum="yp0fexROokCaDIPzoyucvQ==" xmlns:p7="http://www.ni.com/PanelCommon">
+							<p7:p.TypeDefinitionTargets>
+								<p7:TypeDefinitionTarget TargetName="Burst\ Parameters\.gtype:ControlDefinition" />
+							</p7:p.TypeDefinitionTargets>
+							<NumericText Height="[float]22" Id="87" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]88" Left="[float]5" MinHeight="[float]22" Top="[float]25" Value="{ClusterBinding FieldName=#\ Message\ Symbols}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<p7:Label Height="[float]16" Id="88" LabelOwner="[UIModel]87" Left="[float]5" Text="[string]# Message Symbols" Top="[float]2" Width="[float]105" />
+							<NumericText Height="[float]22" Id="89" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]90" Left="[float]5" MinHeight="[float]22" Top="[float]70" Value="{ClusterBinding FieldName=#\ Guard\ Symbols}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<p7:Label Height="[float]16" Id="90" LabelOwner="[UIModel]89" Left="[float]5" Text="[string]# Guard Symbols" Top="[float]47" Width="[float]91" />
+							<NumericText BaseName="[string]Numeric" Height="[float]22" Id="91" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[uint]1" Label="[UIModel]92" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" Top="[float]115" Value="{ClusterBinding FieldName=Sync\ Bits}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<p7:Label Height="[float]16" Id="92" LabelOwner="[UIModel]91" Left="[float]5" Text="[string]Sync Bits" Top="[float]92" Width="[float]47" />
+						</Cluster>
+						<Label Height="[float]16" Id="93" LabelOwner="[UIModel]86" Left="[float]5" Text="[string]Burst Parameters" Top="[float]354" Width="[float]90" />
+						<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@db50d6f4ac3a497ab3a29a06771dc3e3" Height="[float]102" Id="97" Label="[UIModel]102" Left="[float]5" Top="[float]547" Value="{ClusterBinding FieldName=Coding\ and\ CRC}" Width="[float]123" p7:ControlDefinitionChecksum="a8EmWhM5LSCuU1TnO0PSWg==" xmlns:p7="http://www.ni.com/PanelCommon">
+							<p7:p.TypeDefinitionTargets>
+								<p7:TypeDefinitionTarget TargetName="Coding\ and\ CRC\.gtype:ControlDefinition" />
+							</p7:p.TypeDefinitionTargets>
+							<NumericText BaseName="[string]Numeric" Height="[float]22" Id="98" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ushort]1" Label="[UIModel]99" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" Top="[float]70" Value="{ClusterBinding FieldName=CRC\ seed}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<p7:Label Height="[float]16" Id="99" LabelOwner="[UIModel]98" Left="[float]5" Text="[string]CRC seed" Top="[float]47" Width="[float]51" />
+							<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="100" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]101" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Rate\ (k/n)}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<EnumSelectorInfo DisplayValue="[string]1/2" Id="34" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]2/3" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+							</EnumSelector>
+							<p7:Label Height="[float]16" Id="101" LabelOwner="[UIModel]100" Left="[float]5" Text="[string]Rate (k/n)" Top="[float]2" Width="[float]52" />
+						</Cluster>
+						<Label Height="[float]16" Id="102" LabelOwner="[UIModel]97" Left="[float]5" Text="[string]Coding and CRC" Top="[float]524" Width="[float]87" />
+					</Cluster>
+					<Label Height="[float]16" Id="79" LabelOwner="[UIModel]48" Left="[float]374" Text="[string]Demodulation parameters" Top="[float]52" Width="[float]139" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="229e5236a2404a7c81d664f6c539eecc">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="PSK system parameters">
+						<DataType>
+							<Composite Id="2" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+								<Members>
+									<Field FieldAccessPolicy="ReadWrite" Name="samples per symbol (16)" DataType="Int32" />
+									<Field FieldAccessPolicy="ReadWrite" Name="symbol map">
+										<DataType>
+											<VariableArray DereferenceType="ComplexDouble" />
+										</DataType>
+									</Field>
+									<Field FieldAccessPolicy="ReadWrite" Name="differential PSK">
+										<DataType>
+											<Enumeration>
+												<Members>
+													<EnumerationMember Value="0" Name="disable" />
+													<EnumerationMember Value="1" Name="enable" />
+												</Members>
+												<DataType>
+													<UInt16 />
+												</DataType>
+											</Enumeration>
+										</DataType>
+									</Field>
+									<Field FieldAccessPolicy="ReadWrite" Name="PSK type">
+										<DataType>
+											<Enumeration>
+												<Members>
+													<EnumerationMember Value="0" Name="normal" />
+													<EnumerationMember Value="1" Name="shifted" />
+													<EnumerationMember Value="2" Name="offset" />
+												</Members>
+												<DataType>
+													<UInt16 />
+												</DataType>
+											</Enumeration>
+										</DataType>
+									</Field>
+								</Members>
+							</Composite>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="pulse shaping filter coefficients">
+						<DataType>
+							<VariableArray DereferenceType="Double" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="matched filter coefficients">
+						<DataType>
+							<VariableArray DereferenceType="Double" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="Burst Parameters">
+						<DataType>
+							<Typedef TypedefName="Burst Parameters.gtype" UnderlyingType="@e84cf69904fc4f19921e55b9d3b27adf" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="Coding and CRC">
+						<DataType>
+							<Typedef TypedefName="Coding and CRC.gtype" UnderlyingType="@4fdaafd57607439a93e535773cc48656" />
+						</DataType>
+					</Field>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="4e9bc905a5964244af2e1481b2f3637e">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="samples per symbol (16)" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="symbol map">
+						<DataType>
+							<VariableArray DereferenceType="ComplexDouble" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="differential PSK">
+						<DataType>
+							<Enumeration>
+								<Members>
+									<EnumerationMember Value="0" Name="disable" />
+									<EnumerationMember Value="1" Name="enable" />
+								</Members>
+								<DataType>
+									<UInt16 />
+								</DataType>
+							</Enumeration>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="PSK type">
+						<DataType>
+							<Enumeration>
+								<Members>
+									<EnumerationMember Value="0" Name="normal" />
+									<EnumerationMember Value="1" Name="shifted" />
+									<EnumerationMember Value="2" Name="offset" />
+								</Members>
+								<DataType>
+									<UInt16 />
+								</DataType>
+							</Enumeration>
+						</DataType>
+					</Field>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1d5f999085f442bbbef89b4d2613fdf5">
+			<Typedef TypedefName="Burst Parameters.gtype" UnderlyingType="@e84cf69904fc4f19921e55b9d3b27adf" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="db50d6f4ac3a497ab3a29a06771dc3e3">
+			<Typedef TypedefName="Coding and CRC.gtype" UnderlyingType="@4fdaafd57607439a93e535773cc48656" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="e84cf69904fc4f19921e55b9d3b27adf">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="# Message Symbols" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="# Guard Symbols" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Sync Bits" DataType="UInt32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="4fdaafd57607439a93e535773cc48656">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Rate (k/n)">
+						<DataType>
+							<Enumeration>
+								<Members>
+									<EnumerationMember Value="0" Name="1/2" />
+									<EnumerationMember Value="1" Name="2/3" />
+								</Members>
+								<DataType>
+									<UInt16 />
+								</DataType>
+							</Enumeration>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="CRC seed" DataType="UInt16" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

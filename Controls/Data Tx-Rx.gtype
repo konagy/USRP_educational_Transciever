@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="E6EFE3F3F1CD62203B46E12D99AE5E96" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@2cacb9ad60524e8899b73516c3cb548a" Friends="" Id="1" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Cluster" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="7.5" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@2cacb9ad60524e8899b73516c3cb548a" Id="62" Name="Cluster">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>1_2_16_16_0x3FE0000000000000_8_</Field1>
+					<Field2>16_4_0_0_</Field2>
+					<Field3>0x40C3880000000000</Field3>
+					<Field4>240</Field4>
+					<Field5>0</Field5>
+					<Field6>4</Field6>
+					<Field7>0</Field7>
+					<Field8>
+						<Cluster>
+							<Field1>0</Field1>
+							<Field2>null</Field2>
+							<Field3>0</Field3>
+							<Field4>0</Field4>
+						</Cluster>
+					</Field8>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="10" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="11" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,DefaultTarget,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="12" ModelDefinitionType="DefaultTarget" Name="Cluster\.gtype" NameTracksFileName="True">
+			<DefaultTarget />
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.PanelCommon.SourceModel.ControlDefinition,EmbeddedReference" Id="13" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="14" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@2cacb9ad60524e8899b73516c3cb548a" Height="[float]668" Id="15" Label="[UIModel]61" Left="[float]100" Top="[float]100" Value="{DataItemBinding Id=62}" Width="[float]516" xmlns="http://www.ni.com/PanelCommon">
+						<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@6a0f6ea5e7f241d797e08de9e3b9852d" Height="[float]300" Id="16" Label="[UIModel]17" Left="[float]19" Top="[float]38" Value="{ClusterBinding FieldName=Filter\ Coefficiients\ (Mod)}" Width="[float]213">
+							<EnumSelector AllowUndefinedValueEntry="[bool]False" Height="[float]22" Id="32" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]38" Left="[float]15" Top="[float]39" Value="{ClusterBinding FieldName=modulation\ type}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<EnumSelectorInfo DisplayValue="[string]FSK" Value="[ushort]0" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]PSK" Value="[ushort]1" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]QAM" Value="[ushort]2" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]MSK" Value="[ushort]3" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]PAM" Value="[ushort]4" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]ASK" Value="[ushort]5" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]CPM" Value="[ushort]6" ValueType="[Type]UInt16" />
+							</EnumSelector>
+							<EnumSelector AllowUndefinedValueEntry="[bool]False" Height="[float]22" Id="33" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]39" Left="[float]15" Top="[float]84" Value="{ClusterBinding FieldName=pulse\ shaping\ filter}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<EnumSelectorInfo DisplayValue="[string]none" Value="[ushort]0" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]Raised Cosine" Value="[ushort]1" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]Root Raised Cos" Value="[ushort]2" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]Gaussian" Value="[ushort]3" ValueType="[Type]UInt16" />
+							</EnumSelector>
+							<NumericText Height="[float]22" Id="34" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]40" Left="[float]15" MinHeight="[float]22" Top="[float]129" Value="{ClusterBinding FieldName=pulse\ shaping\ samples\ per\ symbol}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<NumericText Height="[float]22" Id="35" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]41" Left="[float]15" MinHeight="[float]22" Top="[float]174" Value="{ClusterBinding FieldName=matched\ samples\ per\ symbol}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<NumericText Height="[float]22" Id="36" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]42" Left="[float]15" MinHeight="[float]22" Top="[float]219" Value="{ClusterBinding FieldName=filter\ parameter}" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<NumericText Height="[float]22" Id="37" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]43" Left="[float]15" MinHeight="[float]22" Top="[float]264" Value="{ClusterBinding FieldName=filter\ length}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<Label Height="[float]16" Id="38" LabelOwner="[UIModel]32" Left="[float]15" Text="[string]modulation type" Top="[float]16" Width="[float]88" />
+							<Label Height="[float]16" Id="39" LabelOwner="[UIModel]33" Left="[float]15" Text="[string]pulse shaping filter" Top="[float]61" Width="[float]101" />
+							<Label Height="[float]16" Id="40" LabelOwner="[UIModel]34" Left="[float]15" Text="[string]pulse shaping samples per symbol" Top="[float]106" Width="[float]182" />
+							<Label Height="[float]16" Id="41" LabelOwner="[UIModel]35" Left="[float]15" Text="[string]matched samples per symbol" Top="[float]151" Width="[float]155" />
+							<Label Height="[float]16" Id="42" LabelOwner="[UIModel]36" Left="[float]15" Text="[string]filter parameter" Top="[float]196" Width="[float]82" />
+							<Label Height="[float]16" Id="43" LabelOwner="[UIModel]37" Left="[float]15" Text="[string]filter length" Top="[float]241" Width="[float]62" />
+						</Cluster>
+						<Label Height="[float]16" Id="17" LabelOwner="[UIModel]16" Left="[float]19" Text="[string]Filter Coefficiients (Mod)" Top="[float]15" Width="[float]130" />
+						<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@81e66a28e7a24f848642dae82c4d6dda" Height="[float]214" Id="18" Label="[UIModel]19" Left="[float]254" Top="[float]36" Value="{ClusterBinding FieldName=PSK\ Parameters}" Width="[float]159">
+							<NumericText Height="[float]22" Id="44" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]48" Left="[float]12" MinHeight="[float]22" Top="[float]76" Value="{ClusterBinding FieldName=samples\ per\ symbol}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<NumericText Height="[float]22" Id="45" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]49" Left="[float]12" MinHeight="[float]22" Top="[float]126" Value="{ClusterBinding FieldName=M-PSK}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<EnumSelector AllowUndefinedValueEntry="[bool]False" Height="[float]22" Id="46" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]50" Left="[float]12" Top="[float]176" Value="{ClusterBinding FieldName=differential\ PSK}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<EnumSelectorInfo DisplayValue="[string]disable" Value="[ushort]0" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]enable" Value="[ushort]1" ValueType="[Type]UInt16" />
+							</EnumSelector>
+							<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Text Ring" Height="[float]22" Id="47" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]51" Left="[float]12" Top="[float]26" Value="{ClusterBinding FieldName=PSK\ type}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<EnumSelectorInfo DisplayValue="[string]normal" Value="[ushort]0" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]shifted" Value="[ushort]1" ValueType="[Type]UInt16" />
+								<EnumSelectorInfo DisplayValue="[string]offset" Value="[ushort]2" ValueType="[Type]UInt16" />
+							</EnumSelector>
+							<Label Height="[float]16" Id="48" LabelOwner="[UIModel]44" Left="[float]12" Text="[string]samples per symbol" Top="[float]53" Width="[float]106" />
+							<Label Height="[float]16" Id="49" LabelOwner="[UIModel]45" Left="[float]12" Text="[string]M-PSK" Top="[float]103" Width="[float]36" />
+							<Label Height="[float]16" Id="50" LabelOwner="[UIModel]46" Left="[float]12" Text="[string]differential PSK" Top="[float]153" Width="[float]81" />
+							<Label Height="[float]16" Id="51" LabelOwner="[UIModel]47" Left="[float]12" Text="[string]PSK type" Top="[float]3" Width="[float]47" />
+						</Cluster>
+						<Label Height="[float]16" Id="19" LabelOwner="[UIModel]18" Left="[float]254" Text="[string]PSK Parameters" Top="[float]13" Width="[float]83" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="20" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]21" Left="[float]31" MinHeight="[float]22" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" Top="[float]377" Value="{ClusterBinding FieldName=symbol\ rate\ (baud)}" ValueFormatter="[string]LVSI:G4" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="21" LabelOwner="[UIModel]20" Left="[float]31" Text="[string]symbol rate (baud)" Top="[float]354" Width="[float]100" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="22" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ushort]1" Label="[UIModel]23" Left="[float]31" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" RadixVisibility="[SMVisibility]Collapsed" Top="[float]437" UnitAnnotation="[string]" Value="{ClusterBinding FieldName=CRC\ seed}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="23" LabelOwner="[UIModel]22" Left="[float]31" Text="[string]CRC seed" Top="[float]414" Width="[float]51" />
+						<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="24" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]25" Left="[float]22" Top="[float]491" Value="{ClusterBinding FieldName=Coding\ rate\ (k/n)}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<EnumSelectorInfo DisplayValue="[string]1/2" Value="[ushort]0" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]1/3" Value="[ushort]1" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]1/4" Value="[ushort]2" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]2/3" Value="[ushort]3" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]3/4" Value="[ushort]4" ValueType="[Type]UInt16" />
+						</EnumSelector>
+						<Label Height="[float]16" Id="25" LabelOwner="[UIModel]24" Left="[float]22" Text="[string]Coding rate (k/n)" Top="[float]468" Width="[float]91" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="26" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]27" Left="[float]28" MinHeight="[float]22" Top="[float]559" Value="{ClusterBinding FieldName=constraint\ length}" ValueType="[Type]Int32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="27" LabelOwner="[UIModel]26" Left="[float]28" Text="[string]constraint length" Top="[float]536" Width="[float]90" />
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="28" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[int]1" Label="[UIModel]29" Left="[float]264" MinHeight="[float]22" Top="[float]286" Value="{ClusterBinding FieldName=#\ Guard\ bits}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="29" LabelOwner="[UIModel]28" Left="[float]264" Text="[string]# Guard bits" Top="[float]263" Width="[float]66" />
+						<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@4637198a3d2047689a4a7cc3e0a597c2" Height="[float]194" Id="30" Label="[UIModel]31" Left="[float]246" Top="[float]409" Value="{ClusterBinding FieldName=PSK\ synchronization\ parameters}" Width="[float]199">
+							<NumericText BaseName="[string]Numeric" Height="[float]22" Id="52" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]56" Left="[float]5" MinHeight="[float]22" Top="[float]22" Value="{ClusterBinding FieldName=expected\ sync\ location\ (symbols)}" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<ArrayViewer ArrayElement="[UIModel]60" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="53" Label="[UIModel]57" Left="[float]5" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]64" Value="{ClusterBinding FieldName=sync\ sequence}" Width="[float]114">
+								<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+								<NumericText BaseName="[string]Numeric" Height="[float]22" Id="60" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]53" MinHeight="[float]22" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" Top="[float]7" Value="[ComplexDouble]0 + 0i" ValueType="[Type]ComplexDouble" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							</ArrayViewer>
+							<NumericText BaseName="[string]Numeric" Height="[float]22" Id="54" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]58" Left="[float]5" MinHeight="[float]22" Top="[float]120" Value="{ClusterBinding FieldName=sync\ location\ uncertainty\ (symbols)}" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<NumericText BaseName="[string]Numeric" Height="[float]22" Id="55" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]59" Left="[float]5" MinHeight="[float]22" Top="[float]162" Value="{ClusterBinding FieldName=sync\ indent\ (symbols)}" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+							<Label Height="[float]16" Id="56" LabelOwner="[UIModel]52" Left="[float]5" Text="[string]expected sync location (symbols)" Top="[float]0" Width="[float]175" />
+							<Label Height="[float]16" Id="57" LabelOwner="[UIModel]53" Left="[float]5" Text="[string]sync sequence" Top="[float]44" Width="[float]77" />
+							<Label Height="[float]16" Id="58" LabelOwner="[UIModel]54" Left="[float]5" Text="[string]sync location uncertainty (symbols)" Top="[float]98" Width="[float]186" />
+							<Label Height="[float]16" Id="59" LabelOwner="[UIModel]55" Left="[float]5" Text="[string]sync indent (symbols)" Top="[float]140" Width="[float]115" />
+						</Cluster>
+						<Label Height="[float]16" Id="31" LabelOwner="[UIModel]30" Left="[float]246" Text="[string]PSK synchronization parameters" Top="[float]386" Width="[float]170" />
+					</Cluster>
+					<Label Height="[float]16" Id="61" LabelOwner="[UIModel]15" Left="[float]100" Text="[string]Cluster" Top="[float]77" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="2cacb9ad60524e8899b73516c3cb548a">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Filter Coefficiients (Mod)">
+						<DataType>
+							<Composite Id="2" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+								<Members>
+									<Field FieldAccessPolicy="ReadWrite" Name="modulation type">
+										<DataType>
+											<Enumeration>
+												<Members>
+													<EnumerationMember Value="0" Name="FSK" />
+													<EnumerationMember Value="1" Name="PSK" />
+													<EnumerationMember Value="2" Name="QAM" />
+													<EnumerationMember Value="3" Name="MSK" />
+													<EnumerationMember Value="4" Name="PAM" />
+													<EnumerationMember Value="5" Name="ASK" />
+													<EnumerationMember Value="6" Name="CPM" />
+												</Members>
+												<DataType>
+													<UInt16 />
+												</DataType>
+											</Enumeration>
+										</DataType>
+									</Field>
+									<Field FieldAccessPolicy="ReadWrite" Name="pulse shaping filter">
+										<DataType>
+											<Enumeration>
+												<Members>
+													<EnumerationMember Value="0" Name="none" />
+													<EnumerationMember Value="1" Name="Raised Cosine" />
+													<EnumerationMember Value="2" Name="Root Raised Cos" />
+													<EnumerationMember Value="3" Name="Gaussian" />
+												</Members>
+												<DataType>
+													<UInt16 />
+												</DataType>
+											</Enumeration>
+										</DataType>
+									</Field>
+									<Field FieldAccessPolicy="ReadWrite" Name="pulse shaping samples per symbol" DataType="Int32" />
+									<Field FieldAccessPolicy="ReadWrite" Name="matched samples per symbol" DataType="Int32" />
+									<Field FieldAccessPolicy="ReadWrite" Name="filter parameter" DataType="Double" />
+									<Field FieldAccessPolicy="ReadWrite" Name="filter length" DataType="Int32" />
+								</Members>
+							</Composite>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="PSK Parameters">
+						<DataType>
+							<Composite Id="3" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+								<Members>
+									<Field FieldAccessPolicy="ReadWrite" Name="samples per symbol" DataType="Int32" />
+									<Field FieldAccessPolicy="ReadWrite" Name="M-PSK" DataType="Int32" />
+									<Field FieldAccessPolicy="ReadWrite" Name="differential PSK">
+										<DataType>
+											<Enumeration>
+												<Members>
+													<EnumerationMember Value="0" Name="disable" />
+													<EnumerationMember Value="1" Name="enable" />
+												</Members>
+												<DataType>
+													<UInt16 />
+												</DataType>
+											</Enumeration>
+										</DataType>
+									</Field>
+									<Field FieldAccessPolicy="ReadWrite" Name="PSK type">
+										<DataType>
+											<Enumeration>
+												<Members>
+													<EnumerationMember Value="0" Name="normal" />
+													<EnumerationMember Value="1" Name="shifted" />
+													<EnumerationMember Value="2" Name="offset" />
+												</Members>
+												<DataType>
+													<UInt16 />
+												</DataType>
+											</Enumeration>
+										</DataType>
+									</Field>
+								</Members>
+							</Composite>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="symbol rate (baud)" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="CRC seed" DataType="UInt16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Coding rate (k/n)">
+						<DataType>
+							<Enumeration>
+								<Members>
+									<EnumerationMember Value="0" Name="1/2" />
+									<EnumerationMember Value="1" Name="1/3" />
+									<EnumerationMember Value="2" Name="1/4" />
+									<EnumerationMember Value="3" Name="2/3" />
+									<EnumerationMember Value="4" Name="3/4" />
+								</Members>
+								<DataType>
+									<UInt16 />
+								</DataType>
+							</Enumeration>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="constraint length" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="# Guard bits" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="PSK synchronization parameters">
+						<DataType>
+							<Composite Id="4" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+								<Members>
+									<Field FieldAccessPolicy="ReadWrite" Name="expected sync location (symbols)" DataType="Int32" />
+									<Field FieldAccessPolicy="ReadWrite" Name="sync sequence">
+										<DataType>
+											<VariableArray DereferenceType="ComplexDouble" />
+										</DataType>
+									</Field>
+									<Field FieldAccessPolicy="ReadWrite" Name="sync location uncertainty (symbols)" DataType="Int32" />
+									<Field FieldAccessPolicy="ReadWrite" Name="sync indent (symbols)" DataType="Int32" />
+								</Members>
+							</Composite>
+						</DataType>
+					</Field>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="6a0f6ea5e7f241d797e08de9e3b9852d">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="modulation type">
+						<DataType>
+							<Enumeration>
+								<Members>
+									<EnumerationMember Value="0" Name="FSK" />
+									<EnumerationMember Value="1" Name="PSK" />
+									<EnumerationMember Value="2" Name="QAM" />
+									<EnumerationMember Value="3" Name="MSK" />
+									<EnumerationMember Value="4" Name="PAM" />
+									<EnumerationMember Value="5" Name="ASK" />
+									<EnumerationMember Value="6" Name="CPM" />
+								</Members>
+								<DataType>
+									<UInt16 />
+								</DataType>
+							</Enumeration>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="pulse shaping filter">
+						<DataType>
+							<Enumeration>
+								<Members>
+									<EnumerationMember Value="0" Name="none" />
+									<EnumerationMember Value="1" Name="Raised Cosine" />
+									<EnumerationMember Value="2" Name="Root Raised Cos" />
+									<EnumerationMember Value="3" Name="Gaussian" />
+								</Members>
+								<DataType>
+									<UInt16 />
+								</DataType>
+							</Enumeration>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="pulse shaping samples per symbol" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="matched samples per symbol" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="filter parameter" DataType="Double" />
+					<Field FieldAccessPolicy="ReadWrite" Name="filter length" DataType="Int32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="81e66a28e7a24f848642dae82c4d6dda">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="samples per symbol" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="M-PSK" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="differential PSK">
+						<DataType>
+							<Enumeration>
+								<Members>
+									<EnumerationMember Value="0" Name="disable" />
+									<EnumerationMember Value="1" Name="enable" />
+								</Members>
+								<DataType>
+									<UInt16 />
+								</DataType>
+							</Enumeration>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="PSK type">
+						<DataType>
+							<Enumeration>
+								<Members>
+									<EnumerationMember Value="0" Name="normal" />
+									<EnumerationMember Value="1" Name="shifted" />
+									<EnumerationMember Value="2" Name="offset" />
+								</Members>
+								<DataType>
+									<UInt16 />
+								</DataType>
+							</Enumeration>
+						</DataType>
+					</Field>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="4637198a3d2047689a4a7cc3e0a597c2">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="expected sync location (symbols)" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="sync sequence">
+						<DataType>
+							<VariableArray DereferenceType="ComplexDouble" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="sync location uncertainty (symbols)" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="sync indent (symbols)" DataType="Int32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
