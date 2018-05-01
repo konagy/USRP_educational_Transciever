@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="E4D65BFE8EEB9296A8DD0E25233712A9" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="769CB35161F57B5BBEEF3C82CA591492" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -390,7 +390,6 @@
 					<Wire Id="2302" Joints="N(2299:outArray) N(2279:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="2445" Joints="N(2308:double precision float) N(2299:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="2448" Joints="N(2446:double precision float) N(2299:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="4301" Joints="N(4270:R0) h(25) B(1) N(2446:number) B(1) N(8479:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="4293" Joints="N(4704:R4) N(4270:L4)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Facade="WireInvisibleFacade" Id="4272" Joints="N(4271:Out) N(4270:L1)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="7513" Joints="N(7514:i0) h(89) v(85) N(4270:L3)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -406,6 +405,7 @@
 					</NodeLabel>
 					<Wire Id="7852" Joints="N(5906:i0) h(5) v(-10) N(4704:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="7921" Joints="N(4704:R0) N(4270:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="8527" Joints="N(4270:R0) N(2446:number)" xmlns="http://www.ni.com/PlatformFramework" />
 					<LoopCount Bounds="1 1 15 15" Docking="Left" Id="4721" Terminals="4719, 4720" />
 					<LoopTunnel Bounds="-5 92 13 10" Docking="Left" Id="5891" Terminals="o0=8312, i0=7609" />
 					<LoopTunnel Bounds="-5 137 13 10" Docking="Left" Id="5894" Terminals="o0=8315, i0=5893" />
@@ -415,7 +415,6 @@
 					<LoopTunnel Bounds="-5 117 13 10" Docking="Left" Id="7514" Terminals="o0=8318, i0=7513" />
 					<RightShiftRegister Bounds="470 212 13 10" Docking="Right" Id="7722" Terminals="4719=7719, 4720=4395" />
 					<LeftShiftRegister Bounds="-5 212 13 10" Docking="Left" Id="7724" RightRegister="7722" Terminals="o0=7914, i0=5896" />
-					<LoopTunnel Bounds="212 270 10 13" Docking="Bottom" Id="8479" Terminals="o0=8480, i0=4301" />
 				</ForLoop>
 				<MethodCall Bounds="630 255 40 40" DomainName="NI.MocCommon" Id="2179" Target="Display\ Error\.gvi" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
@@ -450,7 +449,6 @@
 				<Wire Id="7874" Joints="N(2038:R2) N(5903:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="4672" Joints="N(2038:R0) h(13) v(-95) N(5900:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="7719" Joints="N(7722:4719) N(2179:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="8480" Joints="N(8479:o0) v(14) N(8481:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="7932" Terminals="7930=8526, 7931" />
 				<LoopTunnel Bounds="-5 257 13 10" Docking="Left" Id="8307" Terminals="o0=6854, i0=8306" />
 				<LoopTunnel Bounds="-5 357 13 10" Docking="Left" Id="8310" Terminals="o0=6860, i0=8309" />
@@ -459,15 +457,7 @@
 				<LoopTunnel Bounds="-5 162 13 10" Docking="Left" Id="8319" Terminals="o0=7515, i0=8318" />
 				<LoopTunnel Bounds="-5 272 13 10" Docking="Left" Id="8322" Terminals="o0=7751, i0=8321" />
 				<LoopTunnel Bounds="-5 217 13 10" Docking="Left" Id="8325" Terminals="o0=8523, i0=8324" />
-				<LoopTunnel AutoIndex="True" Bounds="700 337 13 10" Docking="Right" Id="8481" Terminals="o0=8485, i0=8480" TunnelMode="0" />
 			</ForLoop>
-			<DataAccessor Bounds="1645 20 40 15" DataItem="8453" Id="8451" Label="8452" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="Int8[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-			</DataAccessor>
-			<NodeLabel AttachedTo="8451" Bounds="1690 20 75 14" Id="8452" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>Modulation_2</p.Text>
-			</NodeLabel>
-			<Wire Id="8485" Joints="N(8481:o0) h(94) v(10) N(8451:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="8523" Joints="N(15:R0) N(8325:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="785 -325 39.5 16" DataType="Int32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="8524" Label="8525" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>1</p.Data>
@@ -649,43 +639,6 @@
 				</TabItem>
 			</TabControl>
 			<Label Height="[float]16" Id="2197" LabelOwner="[UIModel]2192" Left="[float]1004" Text="[string]Tab" Top="[float]458" Width="[float]20" xmlns="http://www.ni.com/PanelCommon" />
-			<Graph BaseName="[string]Graph" BorderThickness="[SMThickness]1,1,1,1" DataSource="{DataItemBinding Id=8453}" Height="[float]400" Id="8454" Label="[UIModel]8474" Left="[float]1079" MetadataAlwaysOverridesPlotNames="[bool]True" PreferIndexData="[bool]False" RenderMode="[RenderMode]Hardware" SuppressScaleLayout="[bool]False" Top="[float]23" Width="[float]669" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
-				<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="8455" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]8467" Orientation="[SMOrientation]Horizontal" Range="[IRange]450.22114108801406, 503.44980097302073, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
-					<RangeLabeledDivisions Id="8467" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
-				</Axis>
-				<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="8456" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]8468" Orientation="[SMOrientation]Vertical" Range="[IRange]0, 1, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
-					<RangeLabeledDivisions Id="8468" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
-				</Axis>
-				<Plot HorizontalScale="[UIModel]8455" Id="8457" Label="[string]Mine" VerticalScale="[UIModel]8456" Visibility="[SMVisibility]Visible">
-					<PlotRenderer Id="8469" LineStroke="[SMSolidColorBrush]#ff7b161a" LineStyle="[LineStyle]Solid" LineThickness="[double]5" />
-				</Plot>
-				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="8458" LineStroke="[SMSolidColorBrush]#ff7b161a" PointShape="[PointShape]Ellipse" />
-				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="8459" LineStroke="[SMSolidColorBrush]#ff008ee4" PointShape="[PointShape]Rectangle" />
-				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="8460" LineStroke="[SMSolidColorBrush]#ffe2b683" PointShape="[PointShape]Diamond" />
-				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="8461" LineStroke="[SMSolidColorBrush]#ffb7ac1f" PointShape="[PointShape]Cross" />
-				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="8462" LineStroke="[SMSolidColorBrush]#ffaedcef" PointShape="[PointShape]Ellipse" />
-				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="8463" LineStroke="[SMSolidColorBrush]#ffa08bb0" PointShape="[PointShape]Rectangle" />
-				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="8464" LineStroke="[SMSolidColorBrush]#ff7f7f7f" PointShape="[PointShape]Diamond" />
-				<PlotRenderer AreaBaseline="[FillBaseline]Zero" BarBaseline="[FillBaseline]Zero" Id="8465" LineStroke="[SMSolidColorBrush]#ff3c0726" PointShape="[PointShape]Cross" />
-				<Plot HorizontalScale="[UIModel]8455" Id="8466" Label="[string]MT toolkit" VerticalScale="[UIModel]8456" Visibility="[SMVisibility]Visible">
-					<PlotRenderer Id="8486" LineStroke="[SMSolidColorBrush]#ff008ee4" LineStyle="[LineStyle]Solid" LineThickness="[double]3" />
-				</Plot>
-				<Plot HorizontalScale="[UIModel]8455" Id="8477" Label="[string]Plot 3" VerticalScale="[UIModel]8456" Visibility="[SMVisibility]Visible">
-					<PlotRenderer Id="8490" LineStroke="[SMSolidColorBrush]#ffe2b683" LineStyle="[LineStyle]Solid" LineThickness="[double]2" />
-				</Plot>
-				<Plot HorizontalScale="[UIModel]8455" Id="8478" Label="[string]Plot 4" VerticalScale="[UIModel]8456" Visibility="[SMVisibility]Visible">
-					<PlotRenderer Id="8487" LineStroke="[SMSolidColorBrush]#ff00a64f" LineStyle="[LineStyle]Solid" LineThickness="[double]3" />
-				</Plot>
-				<Plot HorizontalScale="[UIModel]8455" Id="8488" Label="[string]Plot1" VerticalScale="[UIModel]8456" Visibility="[SMVisibility]Visible">
-					<PlotRenderer Id="8491" LineStroke="[SMSolidColorBrush]#ffed0c8c" LineStyle="[LineStyle]Solid" LineThickness="[double]5" />
-				</Plot>
-				<Plot HorizontalScale="[UIModel]8455" Id="8489" Label="[string]Plot2" VerticalScale="[UIModel]8456" Visibility="[SMVisibility]Visible" />
-			</Graph>
-			<Label Height="[float]16" Id="8474" LabelOwner="[UIModel]8454" Left="[float]1079" Text="[string]Modulation_2" Top="[float]0" Width="[float]73" xmlns="http://www.ni.com/PanelCommon" />
-			<PlotLegend Graph="[UIModel]8454" Height="[float]158" Id="8470" Left="[float]1754" Top="[float]35" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<CursorLegend DefaultCursorForeground="[SMSolidColorBrush]#ff000000" Graph="[UIModel]8454" Height="[float]102" Id="8471" Left="[float]1084" MinHeight="[float]80" Top="[float]452" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<ScaleLegend Graph="[UIModel]8454" Height="[float]50" Id="8472" Left="[float]1755" MinHeight="[float]50" Top="[float]321" Visible="[bool]False" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<GraphTools Graph="[UIModel]8454" Height="[float]22" Id="8473" Left="[float]1131" Top="[float]418" Width="[float]148" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</CPFrontPanel>
 		<DataItem AdaptToDiagramType="True" DataType="@99201f96f9e4420c96ff2b2e9b125866" Id="259" Name="Constellation" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
@@ -748,9 +701,6 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="UInt16" Id="7666" Name="CRC" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
-		</DataItem>
-		<DataItem AdaptToDiagramType="True" DataType="Int8[,]" Id="8453" Name="Modulation_2" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="Message\ bit\ generation\.gvi">

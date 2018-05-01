@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="C64EF675382BC571EF28A7EED7394951" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="2F3DD16ABAD92EEE0E00296E17216A8A" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="GComponentFeatureSet" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/GComponent.xsd" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -130,6 +130,9 @@
 						<Instance Id="1530" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
 							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Normalize Waveform amplitude to 1.gvi" p9:Process.AssociatedIdentifier="1528" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
 						</Instance>
+						<Instance Id="1726" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="LFSR Generation.gvi" p9:Process.AssociatedIdentifier="1724" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
 						<Superimposition Id="7" Name="Root Superimposition">
 							<Superimpose Source="11">
 								<Superimpose Parent="{:/11}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="222" />
@@ -166,6 +169,7 @@
 								<Superimpose Parent="{:/11}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="426" />
 								<Superimpose Parent="{:/11}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="772" />
 								<Superimpose Parent="{:/11}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="1530" />
+								<Superimpose Parent="{:/11}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="1726" />
 							</Superimpose>
 							<Superimpose Source="913" />
 							<Superimpose Endpoints="{:/913}[{http://www.ni.com/SystemDesigner/UsrpHost/SystemModel}USRP-2900]USRP-2900/[{http://www.ni.com/SystemDesigner/Common/SystemModel}UsbConnector]UsbConnector/ExternalPort_UsbConnector,{:/11}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}UsbConnector]UsbConnector/ExternalPort_UsbConnector" Source="926" />
@@ -301,6 +305,7 @@
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="314" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="PN\ settings\.gvi" StoragePath="SubVIs\not used\PN settings.gvi" />
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="316" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Tx\ parameters\ FGV\.gvi" StoragePath="SubVIs\not used\Tx parameters FGV.gvi" />
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="1528" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Normalize\ Waveform\ amplitude\ to\ 1\.gvi" StoragePath="SubVIs\Misc\Normalize Waveform amplitude to 1.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="1724" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="LFSR\ Generation\.gvi" StoragePath="SubVIs\Coding and packing\LFSR Generation.gvi" />
 					</EmbeddedDefinitionReference>
 					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.UserDefinedRefnums.UdrRepositoryManagerDefinition,EmbeddedReference" Id="53" ModelDefinitionType="NationalInstruments.LabVIEW.VI.UserDefinedRefnums.UdrRepositoryManagerDefinition" Name="udr\.lib" Reparentable="False">
 						<UDRRepositoryManagerDefinition Location="" />
@@ -682,11 +687,24 @@
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="1593" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="LV_niUSRP_ConfigureTimeStartTrigger_startTriggerTime\ in_Term3_ID128\.gtype" />
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="1594" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="LV_niUSRP_FetchRxDataCDBCluster1D_dataBuffer\ out_Term8_ID12\.gtype" />
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="1595" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="LV_niUSRP_FindDevices_niUSRPDevices\ out_Term3_ID12\.gtype" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc" Id="1730" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MT\ Calculate\ BER\ After\ Trigger\ \(User\ Pattern\)\.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc" Id="1731" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="mod_Validate\ BER\ \(Pattern\)\.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc" Id="1732" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="mod_Track\ Count\.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc" Id="1733" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="mod_BER\ on\ block\ \(User\ Pattern\)\.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc" Id="1734" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="mod_Min\ N\ for\ BER\ \(Pattern\)\.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc" Id="1736" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MT\ Format\ Trellis\ Diagram\.gvi" />
 					</EmbeddedDefinitionReference>
 					<EmbeddedDefinitionReference Bindings="ComponentMoC,Envoy,DefinitionReference,SparseEnvoyManager,EmbeddedReference,EnvoyManager" Id="61" ModelDefinitionType="SparseEnvoyManager" Name="AAL_Conditioning_Base\.gcomp" Reparentable="False">
 						<SparseEnvoyManager AssociatedLastWriteTime="131117123994700594" Id="62">
 							<SparseEnvoyManagerDependencySource Id="63" Target=":NullTarget:AAL_Conditioning_Base\.gcomp" />
 						</SparseEnvoyManager>
+						<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="62" Id="1737" Name="NI">
+							<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="62" Id="1738" Name="Analysis">
+								<NameScopingContentReference AutomaticallyResolveUp="True" Bindings="Envoy,ContentReference,NationalInstruments.SourceModel.Envoys.SparseEnvoyManager,NameScopingContentReference" ContentIdentifier="62" Id="1739" Name="Conditioning">
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc" Id="1740" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Unwrap\ Phase\.gvi" StoragePath="Unwrap Phase.gvi" />
+								</NameScopingContentReference>
+							</NameScopingContentReference>
+						</NameScopingContentReference>
 					</EmbeddedDefinitionReference>
 					<EmbeddedDefinitionReference Bindings="ComponentMoC,Envoy,DefinitionReference,SparseEnvoyManager,EmbeddedReference,EnvoyManager" Id="66" ModelDefinitionType="SparseEnvoyManager" Name="AAL_Filtering_Base\.gcomp" Reparentable="False">
 						<SparseEnvoyManager AssociatedLastWriteTime="131117123994867500" Id="67">
@@ -1150,6 +1168,7 @@
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc" Id="769" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Complex\ Vector\ x\ A\.gvi" StoragePath="Complex Vector x A.gvi" />
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc" Id="770" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Real\ A\ x\ B\.gvi" StoragePath="Real A x B.gvi" />
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc" Id="771" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Vector\ x\ A\.gvi" StoragePath="Vector x A.gvi" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc" Id="1735" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Real\ Matrix\ Trace\.gvi" StoragePath="Real Matrix Trace.gvi" />
 								</NameScopingContentReference>
 							</NameScopingContentReference>
 						</NameScopingContentReference>
@@ -1489,6 +1508,7 @@
 				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="315" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="PN\ settings\.gvi" StoragePath="SubVIs\not used\PN settings.gvi" />
 				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="317" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Tx\ parameters\ FGV\.gvi" StoragePath="SubVIs\not used\Tx parameters FGV.gvi" />
 				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1529" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Normalize\ Waveform\ amplitude\ to\ 1\.gvi" StoragePath="SubVIs\Misc\Normalize Waveform amplitude to 1.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1725" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="LFSR\ Generation\.gvi" StoragePath="SubVIs\Coding and packing\LFSR Generation.gvi" />
 			</EmbeddedDefinitionReference>
 			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,PackageReferencesDefinition,EmbeddedReference" Id="58" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 				<PackageReferencesDefinition xmlns="http://www.ni.com/GComponent.xsd" />
