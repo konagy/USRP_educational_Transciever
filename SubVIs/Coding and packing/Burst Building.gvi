@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="1A94E6B13D117B1860392B5DBE872338" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="5C513CC718530FB5B215933264A2D318" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -275,6 +275,9 @@
 				<CaseStructure.Tunnel Bounds="-4 150 13 10" Docking="Left" Id="2042" Terminals="1326=1282, 1327, 1328=2041" />
 				<CaseStructure.Tunnel Bounds="-4 175 13 10" Docking="Left" Id="2045" Terminals="1326=1288, 1327, 1328=2044" />
 			</CaseStructure>
+			<Comment Bounds="1695 960 67 15" Id="2070" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>init array</p.Text>
+			</Comment>
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Int8[]" Id="45" Name="Output bit stream" xmlns="http://www.ni.com/MocCommon">

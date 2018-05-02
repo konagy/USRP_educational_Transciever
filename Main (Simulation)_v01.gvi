@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7F849655BA1B2FC0B0703D1C907E4A40" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="5A771996B350C86DF1058E3E88C0524A" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -5326,7 +5326,7 @@
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
 		<DataItem DataType="@7b2af2064fd9482d899e86ab6357d739" Id="13717" Name="Filter" xmlns="http://www.ni.com/MocCommon">
-			<p.DefaultValue>0_0x3FE0000000000000_0_0x3FE0000000000000_</p.DefaultValue>
+			<p.DefaultValue>2_0x3FE0000000000000_2_0x3FE0000000000000_</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="Filter\.gtype" />
 			</p.TypeDefinitionTargets>

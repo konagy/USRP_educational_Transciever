@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="5C3D18C75F6BBC1732E8F2FCCFBF4614" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="44E9E440BC3B806D9374658ECB8571BC" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -243,7 +243,7 @@
 						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 					</MethodCall>
 					<Wire Id="4098" Joints="N(668:254) h(6) v(25) N(4097:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="4101" Joints="N(4097:R0) h(40) v(-25) N(2923:254)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="4101" Joints="N(4097:R0) h(14) v(-25) N(2923:254)" xmlns="http://www.ni.com/PlatformFramework" />
 					<MethodCall Bounds="336 50 50 50" DomainName="NI.MocCommon" Id="4165" Target="Gardner\.gvi" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
