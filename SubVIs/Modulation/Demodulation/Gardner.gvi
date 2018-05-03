@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="E3D98A5996C542E8A3B1A78E000D0DD6" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="82E92E79AD9BED14E4133B695E40C003" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -175,16 +175,16 @@
 						<Wire Id="39" Joints="N(549:o) h(5) v(25) N(550:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="40" Joints="N(550:o) h(8) v(-90) N(21:i0)" xmlns="http://www.ni.com/PlatformFramework" />
 						<ComplexToRealImaginary Bounds="25 10 30 30" Id="41" />
-						<Wire Id="42" Joints="N(41:y) h(145) v(55) N(549:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="43" Joints="N(18:i0) N(41:x + iy)" xmlns="http://www.ni.com/PlatformFramework" />
 						<ComplexToRealImaginary Bounds="160 50 30 30" Id="44" />
 						<ComplexToRealImaginary Bounds="160 100 30 30" Id="45" />
 						<Wire Id="46" Joints="N(23:c0out) N(44:x + iy)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="47" Joints="N(44:y) N(549:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="48" Joints="N(33:c0out) N(45:x + iy)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="49" Joints="N(45:y) N(550:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Add Bounds="210 65 30 30" Id="549" Terminals="o=39, c0t0v=47, c1t0v=42" />
-						<Add Bounds="250 100 30 30" Id="550" Terminals="o=40, c0t0v=39, c1t0v=49" />
+						<Add Bounds="210 65 30 30" Id="549" Terminals="o=39, c0t0v=563, c1t0v=561" />
+						<Add Bounds="250 100 30 30" Id="550" Terminals="o=40, c0t0v=39, c1t0v=564" />
+						<Wire Id="561" Joints="N(41:x) h(145) v(70) N(549:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="563" Joints="N(44:x) h(15) v(15) N(549:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="564" Joints="N(45:x) h(8) v(15) N(550:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 						<LoopCount Bounds="1 1 15 15" Docking="Left" Id="17" Terminals="15, 16" />
 						<LoopTunnel AutoIndex="True" Bounds="-5 22 13 10" Docking="Left" Id="18" Terminals="o0=461, i0=43" TunnelMode="0" />
 						<LoopTunnel Bounds="-5 42 13 10" Docking="Left" Id="19" Terminals="o0=461, i0=36" />

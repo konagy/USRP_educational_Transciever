@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="53F84DAD99F4124DD856701EAE507C83" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="77F0BEAB658C52A40FE2CEABE7298C81" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
-		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Software" Version="2.0.1" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
@@ -92,16 +92,14 @@
 								<Wire Id="59" Joints="N(51:i0) h(89) B(1) N(64:input) B(1) v(60) B(3) N(70:c4t0v) B(3) v(70) N(71:c4t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 								<BuildArray Bounds="450 95 40 20" CanToggle="False" Id="60" Terminals="outArray=61, c0t0v=84, c1t0v=83" VerticalChunkCount="2" />
 								<Wire Id="61" Joints="N(60:outArray) N(52:i0)" xmlns="http://www.ni.com/PlatformFramework" />
-								<ToByteInteger Bounds="395 95 30 10" Id="62" />
-								<ToByteInteger Bounds="395 165 30 10" Id="63" />
 								<FeedbackNode ArrowDirection="Right" Bounds="100 65 30 20" EnableTerminalVisible="False" Id="64" />
 								<FeedbackNode ArrowDirection="Right" Bounds="140 65 30 20" EnableTerminalVisible="False" Id="65" />
 								<FeedbackNode ArrowDirection="Right" Bounds="180 65 30 20" EnableTerminalVisible="False" Id="66" />
 								<FeedbackNode ArrowDirection="Right" Bounds="220 65 30 20" EnableTerminalVisible="False" Id="67" />
 								<FeedbackNode ArrowDirection="Right" Bounds="260 65 30 20" EnableTerminalVisible="False" Id="68" />
 								<FeedbackNode ArrowDirection="Right" Bounds="300 65 30 20" EnableTerminalVisible="False" Id="69" />
-								<LogicalExclusiveOr Bounds="345 90 30 50" Id="70" Terminals="o=82, c0t0v=78, c1t0v=74, c2t0v=73, c3t0v=72, c4t0v=59" VerticalChunkCount="5" />
-								<LogicalExclusiveOr Bounds="345 160 30 50" Id="71" Terminals="o=79, c0t0v=78, c1t0v=76, c2t0v=74, c3t0v=73, c4t0v=59" VerticalChunkCount="5" />
+								<LogicalExclusiveOr Bounds="345 90 30 50" Id="70" Terminals="o=83, c0t0v=78, c1t0v=74, c2t0v=73, c3t0v=72, c4t0v=59" VerticalChunkCount="5" />
+								<LogicalExclusiveOr Bounds="345 160 30 50" Id="71" Terminals="o=84, c0t0v=78, c1t0v=76, c2t0v=74, c3t0v=73, c4t0v=59" VerticalChunkCount="5" />
 								<Wire Id="72" Joints="N(64:output) h(5) B(1) N(65:input) B(1) v(50) N(70:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 								<Wire Id="73" Joints="N(65:output) h(6) B(1) N(66:input) B(1) v(40) B(3) N(70:c2t0v) B(3) v(80) N(71:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 								<Wire Id="74" Joints="N(66:output) h(5) B(1) N(67:input) B(1) v(30) B(3) N(70:c1t0v) B(3) v(80) N(71:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -109,7 +107,6 @@
 								<Wire Id="76" Joints="N(68:output) h(5) B(1) N(69:input) B(1) v(100) N(71:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 								<Wire Id="77" Joints="N(80:Out) h(25.5) B(1) h(40) B(2) h(40) B(3) h(40) B(4) h(40) B(5) h(40) N(69:initial value) B(5) N(68:initial value) B(4) N(67:initial value) B(3) N(66:initial value) B(2) N(65:initial value) B(1) N(64:initial value)" xmlns="http://www.ni.com/PlatformFramework" />
 								<Wire Id="78" Joints="N(69:output) h(10) v(20) B(2) h(-9) v(70) N(71:c0t0v) B(2) N(70:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-								<Wire Id="79" Joints="N(71:o) N(63:number)" xmlns="http://www.ni.com/PlatformFramework" />
 								<Literal Bounds="50 45 39.5 16" DataType="Int8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="80" Label="81" xmlns="http://www.ni.com/MocCommon">
 									<p.Data>0</p.Data>
 									<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
@@ -117,9 +114,8 @@
 								<NodeLabel AttachedTo="80" Bounds="50 45 0 0" Id="81" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 									<p.Text>initial value</p.Text>
 								</NodeLabel>
-								<Wire Id="82" Joints="N(70:o) N(62:number)" xmlns="http://www.ni.com/PlatformFramework" />
-								<Wire Id="83" Joints="N(62:8bit integer) h(5) v(10) N(60:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-								<Wire Id="84" Joints="N(63:8bit integer) h(15) v(-70) N(60:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="83" Joints="N(70:o) h(30) v(10) N(60:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="84" Joints="N(71:o) h(55) v(-70) N(60:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 								<LoopCount Bounds="1 1 15 15" Docking="Left" Id="50" Terminals="39, 49" />
 								<LoopTunnel AutoIndex="True" Bounds="-5 72 13 10" Docking="Left" Id="51" Terminals="o0=167, i0=59" TunnelMode="0" />
 								<LoopTunnel Bounds="500 97 13 10" Docking="Right" Id="52" Terminals="o0=41, i0=61" TunnelMode="1" />
@@ -286,9 +282,6 @@
 			</Comment>
 			<Comment Bounds="210 520 30 15" Id="176" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>1</p.Text>
-			</Comment>
-			<Comment Bounds="600 655 172 28" Id="262" xmlns="http://www.ni.com/MocCommon">
-				<p.Text>"todo tuncrate + viterbinél is\r\nbuild burst"</p.Text>
 			</Comment>
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
