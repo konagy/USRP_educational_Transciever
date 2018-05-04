@@ -1,0 +1,9 @@
+demod check 			OK
+j-->1				OK
+fázis tolás inkább		OK
+truncate coding if needed
+FILTERING ISI
+Handle if no burst fetched	OK (warning generated in this case)
+normalize waveform
+simplify
+comment refresh +correct texts

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="9432AF83717607AD10B1370CCFF0EE21" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="F26C2D3ED70F45E4FA380F8BA021692A" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -406,29 +406,12 @@
 							</NodeLabel>
 							<Wire Id="1942" Joints="N(1940:Out) h(29) N(1932:T1)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="1943" Joints="N(1932:R0) N(1929:1924)" xmlns="http://www.ni.com/PlatformFramework" />
-							<ArrayLiteral Bounds="10 25 101 51" DataType="Int8[,]" Facade="NationalInstruments.MocCommon.SourceModel.IArrayBehavior" Id="1944" Label="1945" xmlns="http://www.ni.com/MocCommon">
-								<p.Data>
-									<Array Lengths="1,201" IsBinary="True" Compression="GZip">
-										<BinaryElements>H4sIAAAAAAAEAGNgZGBg+A8EIBoEBECMk0DMwcXIwcVAL0SeXfR04SiiFmLkBgDytKhVdgIAAA==</BinaryElements>
-									</Array>
-								</p.Data>
-								<ArrayBehavior ElementType="Int8">
-									<p.DefaultElementValue>0</p.DefaultElementValue>
-								</ArrayBehavior>
-								<Literal Bounds="47 5 40 16" DataType="Int8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="1947">
-									<p.Data>1</p.Data>
-									<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-								</Literal>
-							</ArrayLiteral>
-							<NodeLabel AttachedTo="1944" Bounds="10 25 0 0" Id="1945" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-								<p.Text>Messages out</p.Text>
-							</NodeLabel>
-							<Wire Id="1975" Joints="N(1927:1924) h(5) v(-10) h(177) v(10) N(1928:1924)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="1999" Joints="N(1927:1924) N(1928:1924)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Selector Bounds="-4 65 13 10" Docking="Left" Id="1925" Terminals="1922=1953, 1923, 1924" />
 						<CaseStructure.Tunnel Bounds="-4 95 13 10" Docking="Left" Id="1926" Terminals="1922=1955, 1923=1931, 1924=1933" />
-						<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="1927" Terminals="1922=1949, 1923=1930, 1924=1975" />
-						<CaseStructure.Tunnel Bounds="196 30 13 10" Docking="Right" Id="1928" Terminals="1922=1950, 1923=1930, 1924=1975" />
+						<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="1927" Terminals="1922=1949, 1923=1930, 1924=1999" />
+						<CaseStructure.Tunnel Bounds="196 30 13 10" Docking="Right" Id="1928" Terminals="1922=1950, 1923=1930, 1924=1999" />
 						<CaseStructure.Tunnel Bounds="196 95 13 10" Docking="Right" Id="1929" Terminals="1922=1956, 1923=1931, 1924=1943" />
 					</CaseStructure>
 					<Wire Id="1949" Joints="N(977:o0) h(44) B(1) N(1927:1922) B(1) v(35) N(1951:array)" xmlns="http://www.ni.com/PlatformFramework" />

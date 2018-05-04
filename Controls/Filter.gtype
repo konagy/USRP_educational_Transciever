@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="6A77B403A0D8F56F35E412C123419F41" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="6F198C5C84CCCA36EBB4FC01BE836587" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
-		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Software" Version="2.0.1" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@4c876fb9cbc74655ad63f5ed22157955" Friends="" Id="1" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@cfaf59a0a74643158f81bab3fea96f72" Friends="" Id="1" xmlns="http://www.ni.com/MocCommon">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
@@ -20,7 +20,7 @@
 				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@4c876fb9cbc74655ad63f5ed22157955" Id="25" Name="Filter">
+		<DataItem DataType="@cfaf59a0a74643158f81bab3fea96f72" Id="25" Name="Filter">
 			<p.DefaultValue>0_0x3FE0000000000000_0_0x3FE0000000000000_</p.DefaultValue>
 		</DataItem>
 	</TypeDefinition>
@@ -30,23 +30,23 @@
 			<DefaultTarget />
 			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.PanelCommon.SourceModel.ControlDefinition,EmbeddedReference" Id="13" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="14" xmlns="http://www.ni.com/MocCommon">
-					<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@4c876fb9cbc74655ad63f5ed22157955" Height="[float]192" Id="15" Label="[UIModel]24" Left="[float]100" Top="[float]100" Value="{DataItemBinding Id=25}" Width="[float]155" xmlns="http://www.ni.com/PanelCommon">
-						<EnumSelector AllowUndefinedValueEntry="[bool]False" Height="[float]22" Id="16" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]17" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Pulse\ shaping\ filter}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@cfaf59a0a74643158f81bab3fea96f72" Height="[float]192" Id="15" Label="[UIModel]24" Left="[float]100" Top="[float]100" Value="{DataItemBinding Id=25}" Width="[float]155" xmlns="http://www.ni.com/PanelCommon">
+						<EnumSelector AllowUndefinedValueEntry="[bool]False" Height="[float]22" Id="16" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]17" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Transmit\ filter}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 							<EnumSelectorInfo DisplayValue="[string]none" Value="[ushort]0" ValueType="[Type]UInt16" />
 							<EnumSelectorInfo DisplayValue="[string]Raised Cosine" Value="[ushort]1" ValueType="[Type]UInt16" />
 							<EnumSelectorInfo DisplayValue="[string]Root Raised Cos" Value="[ushort]2" ValueType="[Type]UInt16" />
 							<EnumSelectorInfo DisplayValue="[string]Gaussian" Value="[ushort]3" ValueType="[Type]UInt16" />
 						</EnumSelector>
-						<Label Height="[float]16" Id="17" LabelOwner="[UIModel]16" Left="[float]5" Text="[string]Pulse shaping filter" Top="[float]2" Width="[float]101" />
+						<Label Height="[float]16" Id="17" LabelOwner="[UIModel]16" Left="[float]5" Text="[string]Transmit filter" Top="[float]2" Width="[float]74" />
 						<NumericText Height="[float]22" Id="18" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]19" Left="[float]5" MinHeight="[float]22" Top="[float]70" Value="{ClusterBinding FieldName=Pulse\ filter\ parameter}" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="19" LabelOwner="[UIModel]18" Left="[float]5" Text="[string]Pulse filter parameter" Top="[float]47" Width="[float]114" />
-						<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="20" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]21" Left="[float]5" Top="[float]115" Value="{ClusterBinding FieldName=Matched\ filter}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="20" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]21" Left="[float]5" Top="[float]115" Value="{ClusterBinding FieldName=Receive\ filter}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 							<EnumSelectorInfo DisplayValue="[string]none" Value="[ushort]0" ValueType="[Type]UInt16" />
 							<EnumSelectorInfo DisplayValue="[string]Raised Cosine" Value="[ushort]1" ValueType="[Type]UInt16" />
 							<EnumSelectorInfo DisplayValue="[string]Root Raised Cos" Value="[ushort]2" ValueType="[Type]UInt16" />
 							<EnumSelectorInfo DisplayValue="[string]Gaussian" Value="[ushort]3" ValueType="[Type]UInt16" />
 						</EnumSelector>
-						<Label Height="[float]16" Id="21" LabelOwner="[UIModel]20" Left="[float]5" Text="[string]Matched filter" Top="[float]92" Width="[float]74" />
+						<Label Height="[float]16" Id="21" LabelOwner="[UIModel]20" Left="[float]5" Text="[string]Receive filter" Top="[float]92" Width="[float]68" />
 						<NumericText Height="[float]22" Id="22" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]23" Left="[float]5" MinHeight="[float]22" Top="[float]160" Value="{ClusterBinding FieldName=Matched\ filter\ parameter}" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Height="[float]16" Id="23" LabelOwner="[UIModel]22" Left="[float]5" Text="[string]Matched filter parameter" Top="[float]137" Width="[float]132" />
 					</Cluster>
@@ -56,10 +56,10 @@
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="4c876fb9cbc74655ad63f5ed22157955">
+		<p.TypeReference TypeId="cfaf59a0a74643158f81bab3fea96f72">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Pulse shaping filter">
+					<Field FieldAccessPolicy="ReadWrite" Name="Transmit filter">
 						<DataType>
 							<Enumeration>
 								<Members>
@@ -75,7 +75,7 @@
 						</DataType>
 					</Field>
 					<Field FieldAccessPolicy="ReadWrite" Name="Pulse filter parameter" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Matched filter">
+					<Field FieldAccessPolicy="ReadWrite" Name="Receive filter">
 						<DataType>
 							<Enumeration>
 								<Members>

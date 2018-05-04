@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7D73AA74605AC1ABD78F958067517A9F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="0782B74895884B057DDB27A2A2EEF40E" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
-		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Software" Version="2.0.1" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
@@ -16,7 +16,7 @@
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 				</IconTemplate>
 				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]44" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44">
-					<Text Id="555" Left="[float]2" Text="[string]Deci&#xD;&#xA;mation" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]6" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+					<Text Id="555" Left="[float]2" Text="[string]Deci-&#xD;&#xA;mation" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]6" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
 						<FontSetting FontFamily="Verdana" FontSize="9" Id="556" />
 					</Text>
 				</Canvas>
@@ -112,9 +112,9 @@
 				<p4:Label Height="[float]16" Id="79" LabelOwner="[UIModel]78" Left="[float]5" Text="[string]Coding and CRC" Top="[float]524" Width="[float]87" />
 			</Cluster>
 			<Label Height="[float]16" Id="101" LabelOwner="[UIModel]69" Left="[float]374" Text="[string]Demodulation parameters" Top="[float]52" Width="[float]139" xmlns="http://www.ni.com/PanelCommon" />
-			<ArrayViewer ArrayElement="[UIModel]103" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="102" IndexVisibility="[Visibility]Visible" Left="[float]0" Name="[string]Error arary in" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]0" Value="{DataItemBinding Id=64}" Width="[float]130" xmlns="http://www.ni.com/PanelCommon">
-				<p.DefaultElementValue>0x0</p.DefaultElementValue>
-				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="103" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]0" MinHeight="[float]22" Name="[string]Child" Top="[float]0" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ArrayViewer ArrayElement="[UIModel]103" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="102" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" Left="[float]0" Name="[string]Error arary in" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]0" Value="{DataItemBinding Id=64}" Width="[float]130" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="103" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ComplexDouble]1 + 0i" Left="[float]0" MinHeight="[float]22" Name="[string]Child" Top="[float]0" ValueFormatter="[string]LV:G6" ValueType="[Type]ComplexDouble" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<ArrayViewer ArrayElement="[UIModel]578" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]44" Id="581" IndexVisibility="[Visibility]Visible" Left="[float]0" Name="[string]Array" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]0" Value="{DataItemBinding Id=575}" Width="[float]90" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>False</p.DefaultElementValue>
@@ -136,7 +136,7 @@
 				<Terminal DataType="@0240b17d80e44b96b92dd910f50fd839" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<DataAccessor Bounds="804 720 40 15" DataItem="64" Id="56" Label="60" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="Double[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="53" Bounds="765 695 35 14" Id="57" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Bits in</p.Text>
@@ -144,7 +144,7 @@
 			<NodeLabel AttachedTo="54" Bounds="1449 695 105 14" Id="58" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Decimated bits out</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="55" Bounds="646 800 144 14" Id="59" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="55" Bounds="645 800 145 14" Id="59" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Demodulation parameters</p.Text>
 			</NodeLabel>
 			<NodeLabel AttachedTo="56" Bounds="724 720 75 14" Id="60" xmlns="http://www.ni.com/PlatformFramework">
@@ -156,7 +156,7 @@
 					<Wire Id="549" Joints="N(536:127) N(533:127)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 495 285" Id="128" Pattern="No Error">
-					<ArrayMaxAndMin Bounds="185 105 40 40" Id="15" />
+					<ArrayMaxAndMin Bounds="195 105 40 40" Id="15" />
 					<ForLoop Bounds="293 58 165 175" DiagramId="17" Id="16">
 						<LoopIteration Bounds="10 90 15 15" Id="24" />
 						<IsEqual Bounds="85 75 30 30" Id="25" />
@@ -174,7 +174,7 @@
 						<LoopTunnel Bounds="-5 77 13 10" Docking="Left" Id="22" Terminals="o0=47, i0=27" />
 						<LoopTunnel AutoIndex="True" Bounds="155 87 13 10" Docking="Right" Id="563" Terminals="o0=564, i0=595" TunnelMode="0" />
 					</ForLoop>
-					<AbsoluteValue Bounds="150 95 30 30" Id="41" />
+					<AbsoluteValue Bounds="155 95 30 30" Id="41" />
 					<Comment Bounds="350 15 85 30" Id="42" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
 						<p.Text>"Decimating\r\nF(bit)"</p.Text>
 					</Comment>
@@ -244,7 +244,7 @@
 			<DataAccessor Bounds="1430 760 40 15" DataItem="575" Id="580" Label="582" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="580" Bounds="1475 760 30 14" Id="582" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="580" Bounds="1475 760 31 14" Id="582" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Array</p.Text>
 			</NodeLabel>
 			<Wire Id="583" Joints="N(565:126) N(580:Value)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -305,7 +305,7 @@
 				<TypeDefinitionTarget TargetName="Demodulation\ parameters\.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="Double[]" Id="64" Name="Error arary in" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Input" CallIndex="0" DataType="ComplexDouble[]" Id="64" Name="Error arary in" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
 		<DataItem CallDirection="Input" CallIndex="3" DataType="Error" Id="104" Name="Error In" xmlns="http://www.ni.com/MocCommon">

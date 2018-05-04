@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="32706F61ED46017E325F3FADF5EA01D2" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="06B96BEFD1C41007B3FEA4D239934CA6" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
-		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Software" Version="2.0.1" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
@@ -113,10 +113,10 @@
 			<DataAccessor Bounds="1505 615 40 15" DataItem="163" Id="148" Label="155" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="145" Bounds="526 630 144 14" Id="152" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="145" Bounds="525 630 145 14" Id="152" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Demodulation parameters</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="146" Bounds="600 540 70 14" Id="153" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="146" Bounds="599 540 71 14" Id="153" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Waveform in</p.Text>
 			</NodeLabel>
 			<NodeLabel AttachedTo="147" Bounds="628 605 42 14" Id="154" xmlns="http://www.ni.com/PlatformFramework">
@@ -131,9 +131,9 @@
 					<Wire Id="4304" Joints="N(668:253) N(2923:253)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 721 390" Id="254" Pattern="No Error">
-					<WireComment AttachedTo="4413" Bounds="504.5 159 73 16" Id="2768" xmlns="http://www.ni.com/PlatformFramework">
+					<WireComment AttachedTo="4413" Bounds="405 207 73 16" Id="2768" xmlns="http://www.ni.com/PlatformFramework">
 						<p.ExpandedWidth>73</p.ExpandedWidth>
-						<p.Point>541 167</p.Point>
+						<p.Point>441.5 215</p.Point>
 						<p.Text>Sync bits</p.Text>
 					</WireComment>
 					<WireComment AttachedTo="3984" Bounds="200 217 128 16" Id="2769" xmlns="http://www.ni.com/PlatformFramework">
@@ -141,9 +141,9 @@
 						<p.Point>264 225</p.Point>
 						<p.Text>#Message symbols</p.Text>
 					</WireComment>
-					<WireComment AttachedTo="3986" Bounds="154 292 89 16" Id="2770" xmlns="http://www.ni.com/PlatformFramework">
-						<p.ExpandedWidth>89</p.ExpandedWidth>
-						<p.Point>198.5 300</p.Point>
+					<WireComment AttachedTo="3986" Bounds="153 292 90 16" Id="2770" xmlns="http://www.ni.com/PlatformFramework">
+						<p.ExpandedWidth>90</p.ExpandedWidth>
+						<p.Point>198 300</p.Point>
 						<p.Text>Coding Rate</p.Text>
 					</WireComment>
 					<Literal Bounds="283 235 39.5 16" DataType="Int32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="3013" Label="3032" xmlns="http://www.ni.com/MocCommon">
@@ -241,7 +241,7 @@
 						<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 					</MethodCall>
-					<MethodCall Bounds="336 50 50 50" DomainName="NI.MocCommon" Id="4165" Target="Gardner\.gvi" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="336 50 50 50" DomainName="NI.MocCommon" Id="4165" Target="Timing\ Recovery\.gvi" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="Bits in" />
@@ -255,11 +255,11 @@
 						<Terminal DataType="ComplexDouble[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="@0240b17d80e44b96b92dd910f50fd839" Direction="Input" Hotspot="15 50" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="Double[]" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 					</MethodCall>
-					<MethodCall Bounds="406 50 50 50" DomainName="NI.MocCommon" Id="4231" Target="Dacimating\.gvi" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="406 50 50 50" DomainName="NI.MocCommon" Id="4231" Target="Decimating\.gvi" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="Error arary in" />
@@ -271,7 +271,7 @@
 								<Parameter Id="R2" Desc="Array" />
 							</MethodDeclaration>
 						</p.MethodDeclaration>
-						<Terminal DataType="Double[]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="ComplexDouble[]" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="ComplexDouble[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="@0240b17d80e44b96b92dd910f50fd839" Direction="Input" Hotspot="15 50" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
@@ -437,7 +437,7 @@
 						<p4:TypeDefinitionTarget TargetName="Coding\ and\ CRC\.gtype:ControlDefinition" />
 					</p4:p.TypeDefinitionTargets>
 					<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2061" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ushort]1" Label="[UIModel]2062" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" Top="[float]70" Value="{ClusterBinding FieldName=CRC\ seed}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-					<p4:Label Height="[float]16" Id="2062" LabelOwner="[UIModel]2061" Left="[float]5" Text="[string]CRC seed" Top="[float]47" Width="[float]50" />
+					<p4:Label Height="[float]16" Id="2062" LabelOwner="[UIModel]2061" Left="[float]5" Text="[string]CRC seed" Top="[float]47" Width="[float]51" />
 					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="2063" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]2064" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Rate\ (k/n)}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 						<EnumSelectorInfo DisplayValue="[string]1/2" Id="34" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
 						<EnumSelectorInfo DisplayValue="[string]2/3" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
@@ -539,7 +539,7 @@
 					</MergeItem>
 				</MergeScript>
 			</p.IconModel>
-			<p.IconModel Target="Gardner\.gvi">
+			<p.IconModel Target="Timing\ Recovery\.gvi">
 				<MergeScript>
 					<MergeItem Path="." IsPrimary="True">
 						<Icon ListViewIconCrop="0 0 50 50">
@@ -549,8 +549,8 @@
 									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 								</IconTemplate>
 								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]44" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44">
-									<Text Left="[float]0" Text="[string]Gardner" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]14" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
-										<FontSetting FontFamily="Verdana" FontSize="8" />
+									<Text Left="[float]0" Text="[string]Timing&#xD;&#xA;Recovery" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]8" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+										<FontSetting FontFamily="Verdana" FontSize="7" />
 									</Text>
 								</Canvas>
 							</IconPanel>
@@ -558,7 +558,7 @@
 					</MergeItem>
 				</MergeScript>
 			</p.IconModel>
-			<p.IconModel Target="Dacimating\.gvi">
+			<p.IconModel Target="Decimating\.gvi">
 				<MergeScript>
 					<MergeItem Path="." IsPrimary="True">
 						<Icon ListViewIconCrop="0 0 50 50">
@@ -568,7 +568,7 @@
 									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 								</IconTemplate>
 								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]44" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44">
-									<Text Left="[float]2" Text="[string]Deci&#xD;&#xA;mation" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]6" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<Text Left="[float]2" Text="[string]Deci-&#xD;&#xA;mation" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]6" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
 										<FontSetting FontFamily="Verdana" FontSize="9" />
 									</Text>
 								</Canvas>

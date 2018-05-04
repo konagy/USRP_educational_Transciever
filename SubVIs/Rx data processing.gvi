@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="9C682DE5FA2F16C3D757BB1AD696BF65" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="076E0DD582E80100E06D442D8440CAB4" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
-		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Software" Version="2.0.1" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
@@ -200,7 +200,7 @@
 					<Wire Id="1727" Joints="N(1693:963) N(3283:1760)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="1731" Joints="N(965:963) N(3295:1760)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="1734" Joints="N(1714:963) N(3304:1760)" xmlns="http://www.ni.com/PlatformFramework" />
-					<CaseStructure Bounds="25 15 835 430" DataType="@24540b24645b4afd9cce8299d4222bef" Default="3315" Id="1760" Selected="3315" UserSelectorBounds="259 0 317 17">
+					<CaseStructure Bounds="25 15 835 430" DataType="@24540b24645b4afd9cce8299d4222bef" Default="3315" Id="1760" Selected="3315" UserSelectorBounds="258 0 318 17">
 						<CaseStructure.Case Bounds="5 5 825 420" Id="1761" Pattern="&quot;Raw data&quot;">
 							<Wire Id="3433" Joints="N(3295:1761) h(5) v(-25) N(3280:1761)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="3447" Joints="N(3419:1761) N(4333:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -334,7 +334,7 @@
 								<PropertyItemTerminal DataType="@5673ee160d6e48e3bbea25b9169b36a8" Hotspot="220 30" Id="c1t0v" Path="Coding and CRC:Rate (k/n)" Usage="Optional" />
 								<PropertyItemTerminal DataType="Int32" Hotspot="220 45" Id="c2t0v" Path="Burst Parameters:# Message Symbols" Usage="Optional" />
 							</PropertyNode>
-							<Wire Id="3353" Joints="N(4289:o0) N(3280:3315)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="3353" Joints="N(4404:4026) N(3280:3315)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="3363" Joints="N(3347:c0t0v) h(300) N(4292:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="3922" Joints="N(3304:3315) h(11) B(1) N(3347:instance in) B(1) v(145) h(260) v(35) N(3941:L1)" xmlns="http://www.ni.com/PlatformFramework" />
 							<MethodCall Bounds="350 210 50 50" DomainName="NI.MocCommon" Id="3941" Target="Demodulation\ \(PSK\)\.gvi" xmlns="http://www.ni.com/MocCommon">
@@ -361,7 +361,7 @@
 							<Wire Id="3995" Joints="N(3283:3315) h(11) v(-15) N(3941:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="3997" Joints="N(3941:R0) h(10) v(-50) N(3969:3315)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="4003" Joints="N(3941:R2) h(15) v(85) N(3954:3315)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="4019" Joints="N(3941:R4) N(4298:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="4019" Joints="N(3941:R4) N(4403:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="4023" Joints="N(3347:c1t0v) h(250) N(4301:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 							<ForLoop Bounds="448 183 300 105" DiagramId="4027" Id="4026">
 								<LoopIteration Bounds="5 75 15 15" Id="4029" />
@@ -412,10 +412,10 @@
 									<p.Text>Forward?</p.Text>
 								</NodeLabel>
 								<Wire Id="4380" Joints="N(3345:R2) N(4286:i0)" xmlns="http://www.ni.com/PlatformFramework" />
-								<Wire Id="4383" Joints="N(3345:R4) N(4289:i0)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="4383" Joints="N(3345:R4) N(4404:4027)" xmlns="http://www.ni.com/PlatformFramework" />
 								<Wire Id="4386" Joints="N(4292:i0) v(44) N(3345:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 								<Wire Id="4389" Joints="N(3345:R0) N(4295:i0)" xmlns="http://www.ni.com/PlatformFramework" />
-								<Wire Id="4392" Joints="N(4298:i0) N(4017:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="4392" Joints="N(4403:i0) N(4017:L4)" xmlns="http://www.ni.com/PlatformFramework" />
 								<Wire Id="4395" Joints="N(4301:i0) v(34) N(4017:L1)" xmlns="http://www.ni.com/PlatformFramework" />
 								<Wire Id="4398" Joints="N(4304:i0) h(9) v(-10) N(4017:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 								<Wire Id="4401" Joints="N(4351:i0) v(54) N(3345:L3)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -424,13 +424,13 @@
 								<Wire Facade="WireInvisibleFacade" Id="3369" Joints="N(3368:Out) N(3345:L1)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 								<LoopCount Bounds="1 1 15 15" Docking="Left" Id="4028" Terminals="4026, 4027" />
 								<LoopTunnel AutoIndex="True" Bounds="290 47 13 10" Docking="Right" Id="4286" Terminals="o0=4320, i0=4380" TunnelMode="0" />
-								<LoopTunnel Bounds="290 67 13 10" Docking="Right" Id="4289" Terminals="o0=3353, i0=4383" />
 								<LoopTunnel Bounds="92 -5 10 13" Docking="Top" Id="4292" Terminals="o0=3363, i0=4386" />
 								<LoopTunnel AutoIndex="True" Bounds="290 27 13 10" Docking="Right" Id="4295" Terminals="o0=4306, i0=4389" TunnelMode="0" />
-								<LoopTunnel Bounds="-5 67 13 10" Docking="Left" Id="4298" Terminals="o0=4019, i0=4392" />
+								<LeftShiftRegister Bounds="-5 67 13 10" Docking="Left" Id="4403" RightRegister="4404" Terminals="o0=4019, i0=4392" />
 								<LoopTunnel Bounds="42 -5 10 13" Docking="Top" Id="4301" Terminals="o0=4023, i0=4395" />
 								<LoopTunnel AutoIndex="True" Bounds="-5 37 13 10" Docking="Left" Id="4304" Terminals="o0=4305, i0=4398" TunnelMode="0" />
 								<LoopTunnel Bounds="82 -5 10 13" Docking="Top" Id="4351" Terminals="o0=4352, i0=4401" />
+								<RightShiftRegister Bounds="290 67 13 10" Docking="Right" Id="4404" Terminals="4026=3353, 4027=4383" />
 							</ForLoop>
 							<Wire Id="4305" Joints="N(3941:R1) N(4304:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="4306" Joints="N(4295:o0) N(4307:3315)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -483,9 +483,9 @@
 			<NodeLabel AttachedTo="3595" Bounds="-592 400 27 14" Id="3596" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Data</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="-510 400 151 50" HasErrorTerminals="False" Id="3612" InstanceDataType="@fb547b0b1e35436a8da5d984bea91aed" Mode="InstanceProperties" Template="List">
-				<PropertyItemTerminal DataType="@0cb425eefec44e818267265b295467de" Hotspot="151 30" Id="c0t0v" Path="Modulated Waveform" Usage="Optional" />
-				<PropertyItemTerminal DataType="Int8[]" Hotspot="151 15" Id="c1t0v" Path="Output Bit Stream" Usage="Optional" />
+			<PropertyNode Bounds="-510 400 152 50" HasErrorTerminals="False" Id="3612" InstanceDataType="@fb547b0b1e35436a8da5d984bea91aed" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal DataType="@0cb425eefec44e818267265b295467de" Hotspot="152 30" Id="c0t0v" Path="Modulated Waveform" Usage="Optional" />
+				<PropertyItemTerminal DataType="Int8[]" Hotspot="152 15" Id="c1t0v" Path="Output Bit Stream" Usage="Optional" />
 			</PropertyNode>
 			<Wire Id="3613" Joints="N(3595:Value) N(3612:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="3614" Joints="N(3612:c0t0v) N(1693:962)" xmlns="http://www.ni.com/PlatformFramework" />

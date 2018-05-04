@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="DB6A36DD53F2C54B08FA37D94D030F52" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="60AFC449F556F8FBFF7B37BB17DDE71C" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -472,15 +472,15 @@
 				<p.Text>Mod</p.Text>
 			</Comment>
 			<DataAccessor Bounds="195 380 40 15" DataItem="1595" Id="1596" Label="1599" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@7b2af2064fd9482d899e86ab6357d739" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@2be3f0f43c3a41b8b82bda959ff4949c" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="1596" Bounds="162 380 28 14" Id="1599" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Filter</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="249 380 172 80" HasErrorTerminals="False" Id="1600" InstanceDataType="@7b2af2064fd9482d899e86ab6357d739" Mode="InstanceProperties" Template="List">
-				<PropertyItemTerminal DataType="@6331ae93944b48efb2f0ba7948788355" Hotspot="172 15" Id="c0t0v" Path="Pulse shaping filter" Usage="Optional" />
+			<PropertyNode Bounds="249 380 172 80" HasErrorTerminals="False" Id="1600" InstanceDataType="@2be3f0f43c3a41b8b82bda959ff4949c" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal DataType="@6331ae93944b48efb2f0ba7948788355" Hotspot="172 15" Id="c0t0v" Path="Receive filter" Usage="Optional" />
 				<PropertyItemTerminal DataType="Double" Hotspot="172 30" Id="c1t0v" Path="Pulse filter parameter" Usage="Optional" />
-				<PropertyItemTerminal DataType="@6331ae93944b48efb2f0ba7948788355" Hotspot="172 45" Id="c2t0v" Path="Matched filter" Usage="Optional" />
+				<PropertyItemTerminal DataType="@6331ae93944b48efb2f0ba7948788355" Hotspot="172 45" Id="c2t0v" Path="Transmit filter" Usage="Optional" />
 				<PropertyItemTerminal DataType="Double" Hotspot="172 60" Id="c3t0v" Path="Matched filter parameter" Usage="Optional" />
 			</PropertyNode>
 			<Wire Id="1601" Joints="N(1596:Value) N(1600:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -705,30 +705,30 @@
 				<p4:Label Height="[float]16" Id="1395" LabelOwner="[UIModel]1394" Left="[float]5" Text="[string]Rate (k/n)" Top="[float]2" Width="[float]52" />
 			</Cluster>
 			<Label Height="[float]16" Id="1396" LabelOwner="[UIModel]1391" Left="[float]706" Text="[string]Coding and CRC" Top="[float]70" Width="[float]87" xmlns="http://www.ni.com/PanelCommon" />
-			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@7b2af2064fd9482d899e86ab6357d739" Height="[float]192" Id="1597" Label="[UIModel]1598" Left="[float]557" Top="[float]392" Value="{DataItemBinding Id=1595}" Width="[float]155" p4:ControlDefinitionChecksum="pfKYB/kzMxowF5ePwkdnfQ==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@2be3f0f43c3a41b8b82bda959ff4949c" Height="[float]192" Id="2560" Label="[UIModel]2569" Left="[float]557" Top="[float]392" Value="{DataItemBinding Id=1595}" Width="[float]155" p4:ControlDefinitionChecksum="iNlykaRwByrP9Y11nZ0yHg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="Filter\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
-				<EnumSelector AllowUndefinedValueEntry="[bool]False" Height="[float]22" Id="1548" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]1549" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Pulse\ shaping\ filter}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<EnumSelector AllowUndefinedValueEntry="[bool]False" Height="[float]22" Id="2561" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]2562" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Transmit\ filter}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 					<EnumSelectorInfo DisplayValue="[string]none" Value="[ushort]0" ValueType="[Type]UInt16" />
 					<EnumSelectorInfo DisplayValue="[string]Raised Cosine" Value="[ushort]1" ValueType="[Type]UInt16" />
 					<EnumSelectorInfo DisplayValue="[string]Root Raised Cos" Value="[ushort]2" ValueType="[Type]UInt16" />
 					<EnumSelectorInfo DisplayValue="[string]Gaussian" Value="[ushort]3" ValueType="[Type]UInt16" />
 				</EnumSelector>
-				<p4:Label Height="[float]16" Id="1549" LabelOwner="[UIModel]1548" Left="[float]5" Text="[string]Pulse shaping filter" Top="[float]2" Width="[float]101" />
-				<NumericText Height="[float]22" Id="1570" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]1571" Left="[float]5" MinHeight="[float]22" Top="[float]70" Value="{ClusterBinding FieldName=Pulse\ filter\ parameter}" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<p4:Label Height="[float]16" Id="1571" LabelOwner="[UIModel]1570" Left="[float]5" Text="[string]Pulse filter parameter" Top="[float]47" Width="[float]114" />
-				<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="1557" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]1594" Left="[float]5" Top="[float]115" Value="{ClusterBinding FieldName=Matched\ filter}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p4:Label Height="[float]16" Id="2562" LabelOwner="[UIModel]2561" Left="[float]5" Text="[string]Transmit filter" Top="[float]2" Width="[float]74" />
+				<NumericText Height="[float]22" Id="2563" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2564" Left="[float]5" MinHeight="[float]22" Top="[float]70" Value="{ClusterBinding FieldName=Pulse\ filter\ parameter}" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="2564" LabelOwner="[UIModel]2563" Left="[float]5" Text="[string]Pulse filter parameter" Top="[float]47" Width="[float]114" />
+				<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="2565" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]2566" Left="[float]5" Top="[float]115" Value="{ClusterBinding FieldName=Receive\ filter}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 					<EnumSelectorInfo DisplayValue="[string]none" Value="[ushort]0" ValueType="[Type]UInt16" />
 					<EnumSelectorInfo DisplayValue="[string]Raised Cosine" Value="[ushort]1" ValueType="[Type]UInt16" />
 					<EnumSelectorInfo DisplayValue="[string]Root Raised Cos" Value="[ushort]2" ValueType="[Type]UInt16" />
 					<EnumSelectorInfo DisplayValue="[string]Gaussian" Value="[ushort]3" ValueType="[Type]UInt16" />
 				</EnumSelector>
-				<p4:Label Height="[float]16" Id="1594" LabelOwner="[UIModel]1557" Left="[float]5" Text="[string]Matched filter" Top="[float]92" Width="[float]74" />
-				<NumericText Height="[float]22" Id="1577" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]1578" Left="[float]5" MinHeight="[float]22" Top="[float]160" Value="{ClusterBinding FieldName=Matched\ filter\ parameter}" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<p4:Label Height="[float]16" Id="1578" LabelOwner="[UIModel]1577" Left="[float]5" Text="[string]Matched filter parameter" Top="[float]137" Width="[float]132" />
+				<p4:Label Height="[float]16" Id="2566" LabelOwner="[UIModel]2565" Left="[float]5" Text="[string]Receive filter" Top="[float]92" Width="[float]68" />
+				<NumericText Height="[float]22" Id="2567" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2568" Left="[float]5" MinHeight="[float]22" Top="[float]160" Value="{ClusterBinding FieldName=Matched\ filter\ parameter}" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="2568" LabelOwner="[UIModel]2567" Left="[float]5" Text="[string]Matched filter parameter" Top="[float]137" Width="[float]132" />
 			</Cluster>
-			<Label Height="[float]16" Id="1598" LabelOwner="[UIModel]1597" Left="[float]557" Text="[string]Filter" Top="[float]369" Width="[float]27" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="2569" LabelOwner="[UIModel]2560" Left="[float]557" Text="[string]Filter" Top="[float]369" Width="[float]27" xmlns="http://www.ni.com/PanelCommon" />
 		</CPFrontPanel>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="@81e66a28e7a24f848642dae82c4d6dda" Id="45" Name="PSK Parameters" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0_0_0_0_</p.DefaultValue>
@@ -837,7 +837,7 @@
 				<TypeDefinitionTarget TargetName="Coding\ and\ CRC\.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem CallDirection="Input" CallIndex="1" DataType="@7b2af2064fd9482d899e86ab6357d739" Id="1595" Name="Filter" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Input" CallIndex="1" DataType="@2be3f0f43c3a41b8b82bda959ff4949c" Id="1595" Name="Filter" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0_0x3FE0000000000000_0_0x3FE0000000000000_</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="Filter\.gtype" />
@@ -1053,8 +1053,8 @@
 				</DataType>
 			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="7b2af2064fd9482d899e86ab6357d739">
-			<Typedef TypedefName="Filter.gtype" UnderlyingType="@4c876fb9cbc74655ad63f5ed22157955" />
+		<p.TypeReference TypeId="2be3f0f43c3a41b8b82bda959ff4949c">
+			<Typedef TypedefName="Filter.gtype" UnderlyingType="@cfaf59a0a74643158f81bab3fea96f72" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="6331ae93944b48efb2f0ba7948788355">
 			<Enumeration>
@@ -1223,10 +1223,10 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="4c876fb9cbc74655ad63f5ed22157955">
+		<p.TypeReference TypeId="cfaf59a0a74643158f81bab3fea96f72">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="Pulse shaping filter">
+					<Field FieldAccessPolicy="ReadWrite" Name="Transmit filter">
 						<DataType>
 							<Enumeration>
 								<Members>
@@ -1242,7 +1242,7 @@
 						</DataType>
 					</Field>
 					<Field FieldAccessPolicy="ReadWrite" Name="Pulse filter parameter" DataType="Double" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Matched filter">
+					<Field FieldAccessPolicy="ReadWrite" Name="Receive filter">
 						<DataType>
 							<Enumeration>
 								<Members>

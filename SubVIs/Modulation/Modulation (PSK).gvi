@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="0405637E59192E846686B14F42E89070" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="01CD1FDB1FD447F560FADA698EDF352E" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
-		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Software" Version="2.0.1" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
@@ -181,7 +181,7 @@
 							<Wire Id="5393" Joints="N(2034:1199) h(221) v(55) N(5391:L1)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="5394" Joints="N(2046:1199) h(201) v(115) N(5391:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="5396" Joints="N(5391:R0) N(2031:1199)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="130 275 50 50" DomainName="NI.MocCommon" Id="5418" Target="Symbol\ mapping\.gvi" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="130 275 50 50" DomainName="NI.MocCommon" Id="5418" Target="Zero\ insertion\.gvi" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="Bits in" />
@@ -219,18 +219,7 @@
 							<Wire Id="5445" Joints="N(5436:R4) N(5418:L4)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="5450" Joints="N(5418:R4) N(5391:L4)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="5451" Joints="N(5391:R4) N(2040:1199)" xmlns="http://www.ni.com/PlatformFramework" />
-							<MethodCall Bounds="315 285 40 20" DomainName="NI.MocCommon" Id="5452" Target="Normalize\ Waveform\ amplitude\ to\ 1\.gvi" xmlns="http://www.ni.com/MocCommon">
-								<p.MethodDeclaration>
-									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-										<Parameter Id="L0" Desc="Waveform in" />
-										<Parameter Id="R0" Desc="Normalized waveform out" />
-									</MethodDeclaration>
-								</p.MethodDeclaration>
-								<Terminal DataType="@0cb425eefec44e818267265b295467de" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-								<Terminal DataType="@0cb425eefec44e818267265b295467de" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-							</MethodCall>
-							<Wire Id="5454" Joints="N(5391:R1) N(5452:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="5463" Joints="N(5452:R0) N(2043:1199)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="5463" Joints="N(5391:R1) N(2043:1199)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Case Bounds="5 5 440 410" Id="1200" Pattern="True">
 							<ForLoop Bounds="48 43 260 160" DiagramId="56" Id="55">
@@ -354,9 +343,9 @@
 			</NodeLabel>
 			<Wire Id="861" Joints="N(978:c2t0v) N(741:502)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="948" Joints="N(21:Value) N(732:502)" xmlns="http://www.ni.com/PlatformFramework" />
-			<PropertyNode Bounds="100 320 238 50" HasErrorTerminals="False" Id="978" InstanceDataType="@f8498ea846014db1b6adb60063c8cb46" Mode="InstanceProperties" Template="List">
-				<PropertyItemTerminal DataType="Int32" Hotspot="238 30" Id="c0t0v" Path="PSK Parameters:samples per symbol" Usage="Optional" />
-				<PropertyItemTerminal DataType="Double[]" Hotspot="238 15" Id="c2t0v" Path="pulse shaping filter coefficients" Usage="Optional" />
+			<PropertyNode Bounds="100 320 239 50" HasErrorTerminals="False" Id="978" InstanceDataType="@f8498ea846014db1b6adb60063c8cb46" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal DataType="Int32" Hotspot="239 30" Id="c0t0v" Path="PSK Parameters:samples per symbol" Usage="Optional" />
+				<PropertyItemTerminal DataType="Double[]" Hotspot="239 15" Id="c2t0v" Path="pulse shaping filter coefficients" Usage="Optional" />
 			</PropertyNode>
 			<DataAccessor Bounds="875 355 40 15" DataItem="983" Id="988" Label="990" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="ComplexDouble[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -497,7 +486,7 @@
 					</MergeItem>
 				</MergeScript>
 			</p.IconModel>
-			<p.IconModel Target="Symbol\ mapping\.gvi">
+			<p.IconModel Target="Zero\ insertion\.gvi">
 				<MergeScript>
 					<MergeItem Path="." IsPrimary="True">
 						<Icon ListViewIconCrop="0 0 50 50">
@@ -507,7 +496,7 @@
 									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 								</IconTemplate>
 								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]44" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44">
-									<Text Foreground="[SMColor]#ff000000" Left="[float]4" Text="[string]Symbol&#xD;&#xA;mapping" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]-1" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<Text Foreground="[SMColor]#ff000000" Left="[float]4" Text="[string]Zero&#xD;&#xA;insertion" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]-1" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
 										<FontSetting FontFamily="Verdana" FontSize="6" />
 									</Text>
 									<Text Left="[float]0" Text="[string]011" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]21" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
@@ -541,23 +530,6 @@
 									<Text Foreground="[SMColor]#ff007133" Left="[float]1" Text="[string]-1+1-1" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]32" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
 										<FontSetting FontFamily="Verdana" FontSize="8" FontStyle="Bold" />
 									</Text>
-								</Canvas>
-							</IconPanel>
-						</Icon>
-					</MergeItem>
-				</MergeScript>
-			</p.IconModel>
-			<p.IconModel Target="Normalize\ Waveform\ amplitude\ to\ 1\.gvi">
-				<MergeScript>
-					<MergeItem Path="." IsPrimary="True">
-						<Icon ListViewIconCrop="0 0 40 20">
-							<IconPanel Height="[float]20" Left="[float]0" Top="[float]0" Width="[float]40">
-								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
-									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
-									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-								</IconTemplate>
-								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]14" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34">
-									<Path Data="[PathGeometry]M 31,2.5 L 31,7 L 31,8 L 31,12.5 C 31,13.167 30,13.167 30,12.5 L 30,8 L 29,8 L 29,10.5 C 29,11.167 28,11.167 28,10.5 L 28,8 L 27,8 L 27,8.5 C 27,9.167 26,9.167 26,8.5 L 26,8 L 25,8 L 25,10.5 C 25,11.167 24,11.167 24,10.5 L 24,8 L 23,8 L 23,12.5 C 23,13.167 22,13.167 22,12.5 L 22,8 L 21,8 L 21,14.5 C 21,15.167 20,15.167 20,14.5 L 20,8 L 19,8 L 19,12.5 C 19,13.167 18,13.167 18,12.5 L 18,8 L 17,8 L 17,10.5 C 17,11.167 16,11.167 16,10.5 L 16,8 L 15,8 L 15,8.5 C 15,9.167 14,9.167 14,8.5 L 14,8 L 13,8 L 13,10.5 C 13,11.167 12,11.167 12,10.5 L 12,8 L 11,8 L 11,12.5 C 11,13.167 10,13.167 10,12.5 L 10,8 L 9,8 L 9,14.5 C 9,15.167 8,15.167 8,14.5 L 8,8 L 7,8 L 7,12.5 C 7,13.167 6,13.167 6,12.5 L 6,8 L 5,8 L 5,10.5 C 5,11.167 4,11.167 4,10.5 L 4,8 L 3,8 L 3,8.5 C 3,9.167 2,9.167 2,8.5 L 2,8 L 1,8 L 1,8.5 C 1,9.167 0,9.167 0,8.5 L 0,8 L 0,7 L 0,6.5 C 0,5.833 1,5.833 1,6.5 L 1,7 L 2,7 L 2,6.5 C 2,5.833 3,5.833 3,6.5 L 3,7 L 4,7 L 4,4.5 C 4,3.833 5,3.833 5,4.5 L 5,7 L 6,7 L 6,2.5 C 6,1.833 7,1.833 7,2.5 L 7,7 L 8,7 L 8,0.5 C 8,-0.167 9,-0.167 9,0.5 L 9,7 L 10,7 L 10,2.5 C 10,1.833 11,1.833 11,2.5 L 11,7 L 12,7 L 12,4.5 C 12,3.833 13,3.833 13,4.5 L 13,7 L 14,7 L 14,6.5 C 14,5.833 15,5.833 15,6.5 L 15,7 L 16,7 L 16,4.5 C 16,3.833 17,3.833 17,4.5 L 17,7 L 18,7 L 18,2.5 C 18,1.833 19,1.833 19,2.5 L 19,7 L 20,7 L 20,0.5 C 20,-0.167 21,-0.167 21,0.5 L 21,7 L 22,7 L 22,2.5 C 22,1.833 23,1.833 23,2.5 L 23,7 L 24,7 L 24,4.5 C 24,3.833 25,3.833 25,4.5 L 25,7 L 26,7 L 26,6.5 C 26,5.833 27,5.833 27,6.5 L 27,7 L 28,7 L 28,4.5 C 28,3.833 29,3.833 29,4.5 L 29,7 L 30,7 L 30,2.5 C 30,1.833 31,1.833 31,2.5 " EditMode="[ShapeEditMode]FixedPath" Fill="[SMSolidColorBrush]#ff007133" Height="[float]15" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]31" />
 								</Canvas>
 							</IconPanel>
 						</Icon>
