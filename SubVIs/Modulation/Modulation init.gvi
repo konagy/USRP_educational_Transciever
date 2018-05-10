@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="60AFC449F556F8FBFF7B37BB17DDE71C" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="4B75E931C6A3686ACA92C8060D8B03A8" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
-		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Software" Version="2.0.1" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="2" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
@@ -84,7 +84,7 @@
 				<p4:Label Height="[float]16" Id="109" LabelOwner="[UIModel]108" Left="[float]5" Text="[string]source" Top="[float]52" Width="[float]35" />
 			</Cluster>
 			<Label Height="[float]16" Id="110" LabelOwner="[UIModel]103" Left="[float]105" Text="[string]error in" Top="[float]303" Width="[float]26" xmlns="http://www.ni.com/PanelCommon" />
-			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@0240b17d80e44b96b92dd910f50fd839" Height="[float]659" Id="1268" Label="[UIModel]1300" Left="[float]527" Top="[float]23" Value="{DataItemBinding Id=856}" Width="[float]187" p4:ControlDefinitionChecksum="Marhl/Zh0PPDDghElEKeRg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@6f309e076ddb44cfb2b8a950ecdaf61e" Height="[float]659" Id="1268" Label="[UIModel]1300" Left="[float]527" Top="[float]23" Value="{DataItemBinding Id=856}" Width="[float]187" p4:ControlDefinitionChecksum="Marhl/Zh0PPDDghElEKeRg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="Demodulation\ parameters\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
@@ -131,22 +131,22 @@
 					<p4:Label Height="[float]16" Id="2496" LabelOwner="[UIModel]2495" Left="[float]5" Text="[string]Sync Bits" Top="[float]92" Width="[float]47" />
 				</p4:Cluster>
 				<p4:Label Height="[float]16" Id="2497" LabelOwner="[UIModel]2490" Left="[float]5" Text="[string]Burst Parameters" Top="[float]354" Width="[float]90" />
-				<p4:Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@db50d6f4ac3a497ab3a29a06771dc3e3" Height="[float]102" Id="1277" Label="[UIModel]1278" Left="[float]5" Top="[float]547" Value="{ClusterBinding FieldName=Coding\ and\ CRC}" Width="[float]123" p4:ControlDefinitionChecksum="a8EmWhM5LSCuU1TnO0PSWg==">
+				<p4:Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@68bf2534b02f4d86bf6444da2fe83075" Height="[float]102" Id="2570" Label="[UIModel]2575" Left="[float]5" Top="[float]547" Value="{ClusterBinding FieldName=Coding\ and\ CRC}" Width="[float]123" p4:ControlDefinitionChecksum="oatfwcRPfqaGu9/dRwFrEA==">
 					<p4:p.TypeDefinitionTargets>
 						<p4:TypeDefinitionTarget TargetName="Coding\ and\ CRC\.gtype:ControlDefinition" />
 					</p4:p.TypeDefinitionTargets>
-					<NumericText BaseName="[string]Numeric" Height="[float]22" Id="1295" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ushort]1" Label="[UIModel]1296" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" Top="[float]70" Value="{ClusterBinding FieldName=CRC\ seed}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-					<p4:Label Height="[float]16" Id="1296" LabelOwner="[UIModel]1295" Left="[float]5" Text="[string]CRC seed" Top="[float]47" Width="[float]51" />
-					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="1297" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]1298" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Rate\ (k/n)}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2571" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ushort]1" Label="[UIModel]2572" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" Top="[float]70" Value="{ClusterBinding FieldName=CRC\ seed}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="2572" LabelOwner="[UIModel]2571" Left="[float]5" Text="[string]CRC seed" Top="[float]47" Width="[float]50" />
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="2573" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]2574" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Rate\ (k/n)}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 						<EnumSelectorInfo DisplayValue="[string]1/2" Id="34" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]2/3" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]none" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
 					</EnumSelector>
-					<p4:Label Height="[float]16" Id="1298" LabelOwner="[UIModel]1297" Left="[float]5" Text="[string]Rate (k/n)" Top="[float]2" Width="[float]52" />
+					<p4:Label Height="[float]16" Id="2574" LabelOwner="[UIModel]2573" Left="[float]5" Text="[string]Rate (k/n)" Top="[float]2" Width="[float]52" />
 				</p4:Cluster>
-				<p4:Label Height="[float]16" Id="1278" LabelOwner="[UIModel]1277" Left="[float]5" Text="[string]Coding and CRC" Top="[float]524" Width="[float]87" />
+				<p4:Label Height="[float]16" Id="2575" LabelOwner="[UIModel]2570" Left="[float]5" Text="[string]Coding and CRC" Top="[float]524" Width="[float]87" />
 			</Cluster>
 			<Label Height="[float]16" Id="1300" LabelOwner="[UIModel]1268" Left="[float]527" Text="[string]Demodulation parameters_2" Top="[float]0" Width="[float]139" xmlns="http://www.ni.com/PanelCommon" />
-			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@0240b17d80e44b96b92dd910f50fd839" Height="[float]659" Id="1302" Label="[UIModel]1334" Left="[float]527" Top="[float]23" Value="{DataItemBinding Id=902}" Width="[float]187" p4:ControlDefinitionChecksum="Marhl/Zh0PPDDghElEKeRg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@6f309e076ddb44cfb2b8a950ecdaf61e" Height="[float]659" Id="1302" Label="[UIModel]1334" Left="[float]527" Top="[float]23" Value="{DataItemBinding Id=902}" Width="[float]187" p4:ControlDefinitionChecksum="Marhl/Zh0PPDDghElEKeRg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="Demodulation\ parameters\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
@@ -193,22 +193,22 @@
 					<p4:Label Height="[float]16" Id="2506" LabelOwner="[UIModel]2505" Left="[float]5" Text="[string]Sync Bits" Top="[float]92" Width="[float]47" />
 				</p4:Cluster>
 				<p4:Label Height="[float]16" Id="2507" LabelOwner="[UIModel]2500" Left="[float]5" Text="[string]Burst Parameters" Top="[float]354" Width="[float]90" />
-				<p4:Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@db50d6f4ac3a497ab3a29a06771dc3e3" Height="[float]102" Id="1311" Label="[UIModel]1312" Left="[float]5" Top="[float]547" Value="{ClusterBinding FieldName=Coding\ and\ CRC}" Width="[float]123" p4:ControlDefinitionChecksum="a8EmWhM5LSCuU1TnO0PSWg==">
+				<p4:Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@68bf2534b02f4d86bf6444da2fe83075" Height="[float]102" Id="2578" Label="[UIModel]2583" Left="[float]5" Top="[float]547" Value="{ClusterBinding FieldName=Coding\ and\ CRC}" Width="[float]123" p4:ControlDefinitionChecksum="oatfwcRPfqaGu9/dRwFrEA==">
 					<p4:p.TypeDefinitionTargets>
 						<p4:TypeDefinitionTarget TargetName="Coding\ and\ CRC\.gtype:ControlDefinition" />
 					</p4:p.TypeDefinitionTargets>
-					<NumericText BaseName="[string]Numeric" Height="[float]22" Id="1329" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ushort]1" Label="[UIModel]1330" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" Top="[float]70" Value="{ClusterBinding FieldName=CRC\ seed}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-					<p4:Label Height="[float]16" Id="1330" LabelOwner="[UIModel]1329" Left="[float]5" Text="[string]CRC seed" Top="[float]47" Width="[float]51" />
-					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="1331" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Label="[UIModel]1332" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Rate\ (k/n)}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2579" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ushort]1" Label="[UIModel]2580" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" Top="[float]70" Value="{ClusterBinding FieldName=CRC\ seed}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="2580" LabelOwner="[UIModel]2579" Left="[float]5" Text="[string]CRC seed" Top="[float]47" Width="[float]50" />
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="2581" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Label="[UIModel]2582" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Rate\ (k/n)}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 						<EnumSelectorInfo DisplayValue="[string]1/2" Id="34" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]2/3" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]none" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
 					</EnumSelector>
-					<p4:Label Height="[float]16" Id="1332" LabelOwner="[UIModel]1331" Left="[float]5" Text="[string]Rate (k/n)" Top="[float]2" Width="[float]52" />
+					<p4:Label Height="[float]16" Id="2582" LabelOwner="[UIModel]2581" Left="[float]5" Text="[string]Rate (k/n)" Top="[float]2" Width="[float]52" />
 				</p4:Cluster>
-				<p4:Label Height="[float]16" Id="1312" LabelOwner="[UIModel]1311" Left="[float]5" Text="[string]Coding and CRC" Top="[float]524" Width="[float]87" />
+				<p4:Label Height="[float]16" Id="2583" LabelOwner="[UIModel]2578" Left="[float]5" Text="[string]Coding and CRC" Top="[float]524" Width="[float]87" />
 			</Cluster>
 			<Label Height="[float]16" Id="1334" LabelOwner="[UIModel]1302" Left="[float]527" Text="[string]Demodulation parameters" Top="[float]0" Width="[float]139" xmlns="http://www.ni.com/PanelCommon" />
-			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@f8498ea846014db1b6adb60063c8cb46" Height="[float]582" Id="1485" Label="[UIModel]1513" Left="[float]839" Top="[float]93" Value="{DataItemBinding Id=968}" Width="[float]187" p4:ControlDefinitionChecksum="nDgDIIhU1kVngx5DXmYlyw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@6632569a3a80447aa49f55e5a602628d" Height="[float]582" Id="1485" Label="[UIModel]1513" Left="[float]839" Top="[float]93" Value="{DataItemBinding Id=968}" Width="[float]187" p4:ControlDefinitionChecksum="nDgDIIhU1kVngx5DXmYlyw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="Modulation\ parameters\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
@@ -247,19 +247,19 @@
 					<p4:Label Height="[float]16" Id="2516" LabelOwner="[UIModel]2515" Left="[float]5" Text="[string]Sync Bits" Top="[float]92" Width="[float]47" />
 				</p4:Cluster>
 				<p4:Label Height="[float]16" Id="2517" LabelOwner="[UIModel]2510" Left="[float]5" Text="[string]Burst Parameters" Top="[float]277" Width="[float]90" />
-				<p4:Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@db50d6f4ac3a497ab3a29a06771dc3e3" Height="[float]102" Id="1492" Label="[UIModel]1493" Left="[float]5" Top="[float]470" Value="{ClusterBinding FieldName=Coding\ and\ CRC}" Width="[float]123" p4:ControlDefinitionChecksum="a8EmWhM5LSCuU1TnO0PSWg==">
+				<p4:Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@68bf2534b02f4d86bf6444da2fe83075" Height="[float]102" Id="2601" Label="[UIModel]2606" Left="[float]5" Top="[float]470" Value="{ClusterBinding FieldName=Coding\ and\ CRC}" Width="[float]123" p4:ControlDefinitionChecksum="oatfwcRPfqaGu9/dRwFrEA==">
 					<p4:p.TypeDefinitionTargets>
 						<p4:TypeDefinitionTarget TargetName="Coding\ and\ CRC\.gtype:ControlDefinition" />
 					</p4:p.TypeDefinitionTargets>
-					<NumericText BaseName="[string]Numeric" Height="[float]22" Id="1509" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ushort]1" Label="[UIModel]1510" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" Top="[float]70" Value="{ClusterBinding FieldName=CRC\ seed}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-					<p4:Label Height="[float]16" Id="1510" LabelOwner="[UIModel]1509" Left="[float]5" Text="[string]CRC seed" Top="[float]47" Width="[float]51" />
-					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="1511" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]1512" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Rate\ (k/n)}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2602" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ushort]1" Label="[UIModel]2603" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" Top="[float]70" Value="{ClusterBinding FieldName=CRC\ seed}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="2603" LabelOwner="[UIModel]2602" Left="[float]5" Text="[string]CRC seed" Top="[float]47" Width="[float]50" />
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="2604" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]2605" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Rate\ (k/n)}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 						<EnumSelectorInfo DisplayValue="[string]1/2" Id="34" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]2/3" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]none" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
 					</EnumSelector>
-					<p4:Label Height="[float]16" Id="1512" LabelOwner="[UIModel]1511" Left="[float]5" Text="[string]Rate (k/n)" Top="[float]2" Width="[float]52" />
+					<p4:Label Height="[float]16" Id="2605" LabelOwner="[UIModel]2604" Left="[float]5" Text="[string]Rate (k/n)" Top="[float]2" Width="[float]52" />
 				</p4:Cluster>
-				<p4:Label Height="[float]16" Id="1493" LabelOwner="[UIModel]1492" Left="[float]5" Text="[string]Coding and CRC" Top="[float]447" Width="[float]87" />
+				<p4:Label Height="[float]16" Id="2606" LabelOwner="[UIModel]2601" Left="[float]5" Text="[string]Coding and CRC" Top="[float]447" Width="[float]87" />
 			</Cluster>
 			<Label Height="[float]16" Id="1513" LabelOwner="[UIModel]1485" Left="[float]839" Text="[string]Modulation parameters" Top="[float]70" Width="[float]125" xmlns="http://www.ni.com/PanelCommon" />
 			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@14c02a3d95d049b7b84014b606afa103" Height="[float]147" Id="2520" Label="[UIModel]2527" Left="[float]100" Top="[float]100" Value="{DataItemBinding Id=1041}" Width="[float]128" p4:ControlDefinitionChecksum="Cm9g3AgmlU/O/4ANSaTmyg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
@@ -331,7 +331,7 @@
 				<p.Text>error in</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="1315 455 40 15" DataItem="277" Id="278" Label="281" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@f8498ea846014db1b6adb60063c8cb46" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@6632569a3a80447aa49f55e5a602628d" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="278" Bounds="1360 455 128 14" Id="281" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Modulation parameters</p.Text>
@@ -343,7 +343,7 @@
 						<Field1>16</Field1>
 						<Field2>
 							<Array Lengths="2" IsBinary="True" Compression="GZip">
-								<BinaryElements>H4sIAAAAAAAEAGNgZGBg+A8EIBoEBEAMJiDmBBPMQIKHBUgk+yWWZObnJeZ45hWXFJXmpuaVFOs55+fm5ufpKISlFhUDJW0NzfVM9UwM9EwsDU2NdRScS3NKSotSbfNSS0uKEnN0FAJKk3Iyk71TK0Pys1PzbFOSzRJTzAzMjCxN0pKNLC1YQVYq4rCoICe1wiUfaEAqSBVLUGpiDqdnbmJ6Zl5iUSUDAxsbCwMMfLCHsRiZob6BSuyHsbgBwyIq0vkAAAA=</BinaryElements>
+								<BinaryElements>H4sIAAAAAAAEAGNgZGBg+A8EIBoEBEAMJiDmBBPMQIKHBUgk+yWWZObnJeZ45hWXFJXmpuaVFOs55+fm5ufpKISlFhUDJW0NTfUM9UwM9EwsDU2NdBScS3NKSotSbfNSS0uKEnN0FAJKk3Iyk71TK0Pys1PzbFOSzRJTzAzMjCxN0pKNLC1YQVYq4rCoICe1wiUfaEAqSBVLUGpiDqdnbmJ6Zl5iUSUDAxsbCwMMfLCHsRiZob6BSuyHsbgBxXXA5fkAAAA=</BinaryElements>
 							</Array>
 						</Field2>
 						<Field3>0</Field3>
@@ -361,7 +361,7 @@
 				<ArrayLiteral Bounds="5 52 208 26" DataType="ComplexDouble[]" Facade="NationalInstruments.MocCommon.SourceModel.IArrayBehavior" Id="558" Label="560">
 					<p.Data>
 						<Array Lengths="2" IsBinary="True" Compression="GZip">
-							<BinaryElements>H4sIAAAAAAAEAGNgZGBg+A8EIBoEBEAMJiDmBBPMQIKHBUgk+yWWZObnJeZ45hWXFJXmpuaVFOs55+fm5ufpKISlFhUDJW0NzfVM9UwM9EwsDU2NdRScS3NKSotSbfNSS0uKEnN0FAJKk3Iyk71TK0Pys1PzbFOSzRJTzAzMjCxN0pKNLC1YQVYq4rCoICe1wiUfaEAqSBVLUGpiDqdnbmJ6Zl5iUSUDAxsbCwMMfLCHsRiZob6BSuyHsbgBwyIq0vkAAAA=</BinaryElements>
+							<BinaryElements>H4sIAAAAAAAEAGNgZGBg+A8EIBoEBEAMJiDmBBPMQIKHBUgk+yWWZObnJeZ45hWXFJXmpuaVFOs55+fm5ufpKISlFhUDJW0NTfUM9UwM9EwsDU2NdBScS3NKSotSbfNSS0uKEnN0FAJKk3Iyk71TK0Pys1PzbFOSzRJTzAzMjCxN0pKNLC1YQVYq4rCoICe1wiUfaEAqSBVLUGpiDqdnbmJ6Zl5iUSUDAxsbCwMMfLCHsRiZob6BSuyHsbgBxXXA5fkAAAA=</BinaryElements>
 						</Array>
 					</p.Data>
 					<ArrayBehavior ElementType="ComplexDouble" IndexEditorWidth="37.200004577636719" Orientation="Horizontal" VisibleColumns="2">
@@ -393,38 +393,38 @@
 			<NodeLabel AttachedTo="555" Bounds="330 -55 0 0" Id="566" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>PSK system parameters</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="1070 265 229 95" HasErrorTerminals="False" Id="821" InstanceDataType="@0240b17d80e44b96b92dd910f50fd839" Mode="InstanceProperties" Template="List">
+			<PropertyNode Bounds="1070 265 229 95" HasErrorTerminals="False" Id="821" InstanceDataType="@6f309e076ddb44cfb2b8a950ecdaf61e" Mode="InstanceProperties" Template="List">
 				<PropertyItemTerminal Action="Write" DataType="@4e9bc905a5964244af2e1481b2f3637e" Hotspot="0 15" Id="c0t0v" Path="PSK system parameters" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="Double[]" Hotspot="0 30" Id="c1t0v" Path="pulse shaping filter coefficients" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="Double[]" Hotspot="0 45" Id="c2t0v" Path="matched filter coefficients" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="@14c02a3d95d049b7b84014b606afa103" Hotspot="0 60" Id="c3t0v" Path="Burst Parameters" Usage="Required" />
-				<PropertyItemTerminal Action="Write" DataType="@db50d6f4ac3a497ab3a29a06771dc3e3" Hotspot="0 75" Id="c4t0v" Path="Coding and CRC" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@68bf2534b02f4d86bf6444da2fe83075" Hotspot="0 75" Id="c4t0v" Path="Coding and CRC" Usage="Required" />
 			</PropertyNode>
 			<DataAccessor Bounds="1015 255 40 15" DataItem="856" Id="890" Label="891" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@0240b17d80e44b96b92dd910f50fd839" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@6f309e076ddb44cfb2b8a950ecdaf61e" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="890" Bounds="1015 255 0 0" Id="891" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Demodulation parameters_2</p.Text>
 			</NodeLabel>
 			<Wire Id="892" Joints="N(890:Value) h(5) v(10) N(821:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="1315 265 40 15" DataItem="902" Id="936" Label="937" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@0240b17d80e44b96b92dd910f50fd839" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@6f309e076ddb44cfb2b8a950ecdaf61e" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="936" Bounds="1360 265 145 14" Id="937" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="936" Bounds="1360 265 144 14" Id="937" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Demodulation parameters</p.Text>
 			</NodeLabel>
 			<Wire Id="938" Joints="N(821:instance out) N(936:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="1015 445 40 15" DataItem="968" Id="966" Label="967" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@f8498ea846014db1b6adb60063c8cb46" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@6632569a3a80447aa49f55e5a602628d" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="966" Bounds="1015 445 0 0" Id="967" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Modulation parameters_2</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="1070 455 229 80" HasErrorTerminals="False" Id="995" InstanceDataType="@f8498ea846014db1b6adb60063c8cb46" Mode="InstanceProperties" Template="List">
+			<PropertyNode Bounds="1070 455 229 80" HasErrorTerminals="False" Id="995" InstanceDataType="@6632569a3a80447aa49f55e5a602628d" Mode="InstanceProperties" Template="List">
 				<PropertyItemTerminal Action="Write" DataType="@81e66a28e7a24f848642dae82c4d6dda" Hotspot="0 15" Id="c0t0v" Path="PSK Parameters" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="Double[]" Hotspot="0 30" Id="c1t0v" Path="pulse shaping filter coefficients" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="@14c02a3d95d049b7b84014b606afa103" Hotspot="0 45" Id="c2t0v" Path="Burst Parameters" Usage="Required" />
-				<PropertyItemTerminal Action="Write" DataType="@db50d6f4ac3a497ab3a29a06771dc3e3" Hotspot="0 60" Id="c3t0v" Path="Coding and CRC" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@68bf2534b02f4d86bf6444da2fe83075" Hotspot="0 60" Id="c3t0v" Path="Coding and CRC" Usage="Required" />
 			</PropertyNode>
 			<Wire Id="996" Joints="N(966:Value) h(5) v(10) N(995:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="1031" Joints="N(995:instance out) N(278:Value)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -433,13 +433,13 @@
 			<DataAccessor Bounds="265 210 40 15" DataItem="1041" Id="1039" Label="1040" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@14c02a3d95d049b7b84014b606afa103" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="1039" Bounds="163 210 97 14" Id="1040" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="1039" Bounds="164 210 96 14" Id="1040" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Burst Parameters</p.Text>
 			</NodeLabel>
 			<Wire Id="1052" Joints="N(15:R4) h(5) v(305) N(99:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="1212" Joints="N(1039:Value) h(695) v(110) B(2) N(821:c3t0v) B(2) v(175) N(995:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="265 185 40 15" DataItem="1390" Id="1398" Label="1399" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@db50d6f4ac3a497ab3a29a06771dc3e3" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@68bf2534b02f4d86bf6444da2fe83075" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="1398" Bounds="170 185 90 14" Id="1399" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Coding and CRC</p.Text>
@@ -448,7 +448,7 @@
 			<Comment Bounds="875 335 30 15" Id="1450" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>2</p.Text>
 			</Comment>
-			<Comment Bounds="500 660 783 42" Id="1453" xmlns="http://www.ni.com/MocCommon">
+			<Comment Bounds="500 660 782 42" Id="1453" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>"\tThis VI generates all the parameters for the demodulation and modulation. It was created, so the main vi's will be more readable.\r\n1. Generating filter coeffieicents for the transmitter and reciever.\r\n2. Generating PSK parameters as PSK type, amples per symbol,..."</p.Text>
 			</Comment>
 			<Wire Id="1516" Joints="N(2462:2118) h(6) v(-150) N(2084:1863)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -461,9 +461,7 @@
 				<p.Text>modulation type</p.Text>
 			</NodeLabel>
 			<Wire Id="1541" Joints="N(1538:Out) h(25.6199646) B(1) N(2090:1863) B(1) N(2465:2118)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="1546" Joints="N(1600:c0t0v) h(33) v(-15) N(1866:1863)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="1553" Joints="N(1600:c2t0v) h(28) v(90) N(2121:2118)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="1575" Joints="N(1600:c3t0v) h(5) v(105) N(2477:2118)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="1575" Joints="N(1600:c3t0v) h(6) v(105) N(2477:2118)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="1582" Joints="N(1600:c1t0v) N(2102:1863)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Comment Bounds="1095 240 56 15" Id="1583" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>Demod</p.Text>
@@ -477,11 +475,11 @@
 			<NodeLabel AttachedTo="1596" Bounds="162 380 28 14" Id="1599" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Filter</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="249 380 172 80" HasErrorTerminals="False" Id="1600" InstanceDataType="@2be3f0f43c3a41b8b82bda959ff4949c" Mode="InstanceProperties" Template="List">
-				<PropertyItemTerminal DataType="@6331ae93944b48efb2f0ba7948788355" Hotspot="172 15" Id="c0t0v" Path="Receive filter" Usage="Optional" />
-				<PropertyItemTerminal DataType="Double" Hotspot="172 30" Id="c1t0v" Path="Pulse filter parameter" Usage="Optional" />
-				<PropertyItemTerminal DataType="@6331ae93944b48efb2f0ba7948788355" Hotspot="172 45" Id="c2t0v" Path="Transmit filter" Usage="Optional" />
-				<PropertyItemTerminal DataType="Double" Hotspot="172 60" Id="c3t0v" Path="Matched filter parameter" Usage="Optional" />
+			<PropertyNode Bounds="249 380 171 80" HasErrorTerminals="False" Id="1600" InstanceDataType="@2be3f0f43c3a41b8b82bda959ff4949c" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal DataType="@6331ae93944b48efb2f0ba7948788355" Hotspot="171 15" Id="c0t0v" Path="Receive filter" Usage="Optional" />
+				<PropertyItemTerminal DataType="Double" Hotspot="171 30" Id="c1t0v" Path="Pulse filter parameter" Usage="Optional" />
+				<PropertyItemTerminal DataType="@6331ae93944b48efb2f0ba7948788355" Hotspot="171 45" Id="c2t0v" Path="Transmit filter" Usage="Optional" />
+				<PropertyItemTerminal DataType="Double" Hotspot="171 60" Id="c3t0v" Path="Matched filter parameter" Usage="Optional" />
 			</PropertyNode>
 			<Wire Id="1601" Joints="N(1596:Value) N(1600:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="1613" Joints="N(2105:1863) h(96) B(1) v(-85) N(821:c1t0v) B(1) v(105) N(995:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -554,7 +552,7 @@
 						<p.Text>filter length</p.Text>
 					</NodeLabel>
 				</CaseStructure.Case>
-				<CaseStructure.Selector Bounds="-4 25 13 10" Docking="Left" Id="1866" Terminals="1863=1546, 1864, 1865=2108" />
+				<CaseStructure.Selector Bounds="-4 25 13 10" Docking="Left" Id="1866" Terminals="1863=2610, 1864, 1865=2108" />
 				<CaseStructure.Tunnel Bounds="-4 85 13 10" Docking="Left" Id="2084" Terminals="1863=1516, 1864=2482, 1865=2083" />
 				<CaseStructure.Tunnel Bounds="136 85 13 10" Docking="Right" Id="2087" Terminals="1863=1518, 1864=2482, 1865=2086" />
 				<CaseStructure.Tunnel Bounds="-4 5 13 10" Docking="Left" Id="2090" Terminals="1863=1541, 1864, 1865=2089" />
@@ -627,7 +625,7 @@
 					<Wire Id="2546" Joints="N(2471:2120) h(5) v(35) B(2) N(414:L1) B(2) v(10) N(414:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="2548" Joints="N(2544:Out) h(5.5) N(414:B0)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
-				<CaseStructure.Selector Bounds="-4 35 13 10" Docking="Left" Id="2121" Terminals="2118=1553, 2119, 2120=2467" />
+				<CaseStructure.Selector Bounds="-4 35 13 10" Docking="Left" Id="2121" Terminals="2118=2611, 2119, 2120=2467" />
 				<CaseStructure.Tunnel Bounds="-4 110 13 10" Docking="Left" Id="2459" Terminals="2118=505, 2119=2486, 2120=2458" />
 				<CaseStructure.Tunnel Bounds="161 110 13 10" Docking="Right" Id="2462" Terminals="2118=1516, 2119=2486, 2120=2461" />
 				<CaseStructure.Tunnel Bounds="25 -4 10 13" Docking="Top" Id="2465" Terminals="2118=1541, 2119, 2120=2464" />
@@ -636,9 +634,11 @@
 				<CaseStructure.Tunnel Bounds="161 35 13 10" Docking="Right" Id="2480" Terminals="2118=1641, 2119=2489, 2120=2479" />
 			</CaseStructure>
 			<Wire Id="2539" Joints="N(17:c1t0v) h(16) B(1) h(44) v(10) N(15:L0) B(1) v(130) B(5) N(2096:1863) B(5) v(40) h(-11) v(60) N(2471:2118)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2610" Joints="N(1600:c2t0v) h(50) v(-45) N(1866:1863)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2611" Joints="N(1600:c0t0v) h(29) v(120) N(2121:2118)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
-			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@f8498ea846014db1b6adb60063c8cb46" Height="[float]582" Id="1455" Label="[UIModel]1483" Left="[float]839" Top="[float]93" Value="{DataItemBinding Id=277}" Width="[float]187" p4:ControlDefinitionChecksum="nDgDIIhU1kVngx5DXmYlyw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@6632569a3a80447aa49f55e5a602628d" Height="[float]582" Id="1455" Label="[UIModel]1483" Left="[float]839" Top="[float]93" Value="{DataItemBinding Id=277}" Width="[float]187" p4:ControlDefinitionChecksum="nDgDIIhU1kVngx5DXmYlyw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="Modulation\ parameters\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
@@ -677,34 +677,34 @@
 					<p4:Label Height="[float]16" Id="2535" LabelOwner="[UIModel]2534" Left="[float]5" Text="[string]Sync Bits" Top="[float]92" Width="[float]47" />
 				</p4:Cluster>
 				<p4:Label Height="[float]16" Id="2536" LabelOwner="[UIModel]2529" Left="[float]5" Text="[string]Burst Parameters" Top="[float]277" Width="[float]90" />
-				<p4:Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@db50d6f4ac3a497ab3a29a06771dc3e3" Height="[float]102" Id="1462" Label="[UIModel]1463" Left="[float]5" Top="[float]470" Value="{ClusterBinding FieldName=Coding\ and\ CRC}" Width="[float]123" p4:ControlDefinitionChecksum="a8EmWhM5LSCuU1TnO0PSWg==">
+				<p4:Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@68bf2534b02f4d86bf6444da2fe83075" Height="[float]102" Id="2593" Label="[UIModel]2598" Left="[float]5" Top="[float]470" Value="{ClusterBinding FieldName=Coding\ and\ CRC}" Width="[float]123" p4:ControlDefinitionChecksum="oatfwcRPfqaGu9/dRwFrEA==">
 					<p4:p.TypeDefinitionTargets>
 						<p4:TypeDefinitionTarget TargetName="Coding\ and\ CRC\.gtype:ControlDefinition" />
 					</p4:p.TypeDefinitionTargets>
-					<NumericText BaseName="[string]Numeric" Height="[float]22" Id="1479" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ushort]1" Label="[UIModel]1480" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" Top="[float]70" Value="{ClusterBinding FieldName=CRC\ seed}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-					<p4:Label Height="[float]16" Id="1480" LabelOwner="[UIModel]1479" Left="[float]5" Text="[string]CRC seed" Top="[float]47" Width="[float]51" />
-					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="1481" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Label="[UIModel]1482" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Rate\ (k/n)}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2594" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ushort]1" Label="[UIModel]2595" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" Top="[float]70" Value="{ClusterBinding FieldName=CRC\ seed}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<p4:Label Height="[float]16" Id="2595" LabelOwner="[UIModel]2594" Left="[float]5" Text="[string]CRC seed" Top="[float]47" Width="[float]50" />
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="2596" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTypeAheadEnabled="[bool]True" Label="[UIModel]2597" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Rate\ (k/n)}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 						<EnumSelectorInfo DisplayValue="[string]1/2" Id="34" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
-						<EnumSelectorInfo DisplayValue="[string]2/3" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+						<EnumSelectorInfo DisplayValue="[string]none" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
 					</EnumSelector>
-					<p4:Label Height="[float]16" Id="1482" LabelOwner="[UIModel]1481" Left="[float]5" Text="[string]Rate (k/n)" Top="[float]2" Width="[float]52" />
+					<p4:Label Height="[float]16" Id="2597" LabelOwner="[UIModel]2596" Left="[float]5" Text="[string]Rate (k/n)" Top="[float]2" Width="[float]52" />
 				</p4:Cluster>
-				<p4:Label Height="[float]16" Id="1463" LabelOwner="[UIModel]1462" Left="[float]5" Text="[string]Coding and CRC" Top="[float]447" Width="[float]87" />
+				<p4:Label Height="[float]16" Id="2598" LabelOwner="[UIModel]2593" Left="[float]5" Text="[string]Coding and CRC" Top="[float]447" Width="[float]87" />
 			</Cluster>
 			<Label Height="[float]16" Id="1483" LabelOwner="[UIModel]1455" Left="[float]839" Text="[string]Modulation parameters" Top="[float]70" Width="[float]125" xmlns="http://www.ni.com/PanelCommon" />
-			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@db50d6f4ac3a497ab3a29a06771dc3e3" Height="[float]102" Id="1391" Label="[UIModel]1396" Left="[float]706" Top="[float]93" Value="{DataItemBinding Id=1390}" Width="[float]123" p4:ControlDefinitionChecksum="a8EmWhM5LSCuU1TnO0PSWg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@68bf2534b02f4d86bf6444da2fe83075" Height="[float]102" Id="2586" Label="[UIModel]2591" Left="[float]706" Top="[float]93" Value="{DataItemBinding Id=1390}" Width="[float]123" p4:ControlDefinitionChecksum="oatfwcRPfqaGu9/dRwFrEA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="Coding\ and\ CRC\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
-				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="1392" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ushort]1" Label="[UIModel]1393" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" Top="[float]70" Value="{ClusterBinding FieldName=CRC\ seed}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<p4:Label Height="[float]16" Id="1393" LabelOwner="[UIModel]1392" Left="[float]5" Text="[string]CRC seed" Top="[float]47" Width="[float]51" />
-				<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="1394" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]1395" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Rate\ (k/n)}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="2587" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ushort]1" Label="[UIModel]2588" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Hexadecimal" Top="[float]70" Value="{ClusterBinding FieldName=CRC\ seed}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="2588" LabelOwner="[UIModel]2587" Left="[float]5" Text="[string]CRC seed" Top="[float]47" Width="[float]50" />
+				<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="2589" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]2590" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=Rate\ (k/n)}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 					<EnumSelectorInfo DisplayValue="[string]1/2" Id="34" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
-					<EnumSelectorInfo DisplayValue="[string]2/3" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+					<EnumSelectorInfo DisplayValue="[string]none" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
 				</EnumSelector>
-				<p4:Label Height="[float]16" Id="1395" LabelOwner="[UIModel]1394" Left="[float]5" Text="[string]Rate (k/n)" Top="[float]2" Width="[float]52" />
+				<p4:Label Height="[float]16" Id="2590" LabelOwner="[UIModel]2589" Left="[float]5" Text="[string]Rate (k/n)" Top="[float]2" Width="[float]52" />
 			</Cluster>
-			<Label Height="[float]16" Id="1396" LabelOwner="[UIModel]1391" Left="[float]706" Text="[string]Coding and CRC" Top="[float]70" Width="[float]87" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="2591" LabelOwner="[UIModel]2586" Left="[float]706" Text="[string]Coding and CRC" Top="[float]70" Width="[float]87" xmlns="http://www.ni.com/PanelCommon" />
 			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@2be3f0f43c3a41b8b82bda959ff4949c" Height="[float]192" Id="2560" Label="[UIModel]2569" Left="[float]557" Top="[float]392" Value="{DataItemBinding Id=1595}" Width="[float]155" p4:ControlDefinitionChecksum="iNlykaRwByrP9Y11nZ0yHg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="Filter\.gtype:ControlDefinition" />
@@ -715,7 +715,7 @@
 					<EnumSelectorInfo DisplayValue="[string]Root Raised Cos" Value="[ushort]2" ValueType="[Type]UInt16" />
 					<EnumSelectorInfo DisplayValue="[string]Gaussian" Value="[ushort]3" ValueType="[Type]UInt16" />
 				</EnumSelector>
-				<p4:Label Height="[float]16" Id="2562" LabelOwner="[UIModel]2561" Left="[float]5" Text="[string]Transmit filter" Top="[float]2" Width="[float]74" />
+				<p4:Label Height="[float]16" Id="2562" LabelOwner="[UIModel]2561" Left="[float]5" Text="[string]Transmit filter" Top="[float]2" Width="[float]73" />
 				<NumericText Height="[float]22" Id="2563" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2564" Left="[float]5" MinHeight="[float]22" Top="[float]70" Value="{ClusterBinding FieldName=Pulse\ filter\ parameter}" ValueType="[Type]Double" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 				<p4:Label Height="[float]16" Id="2564" LabelOwner="[UIModel]2563" Left="[float]5" Text="[string]Pulse filter parameter" Top="[float]47" Width="[float]114" />
 				<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="2565" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]2566" Left="[float]5" Top="[float]115" Value="{ClusterBinding FieldName=Receive\ filter}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
@@ -757,7 +757,7 @@
 				<TypeDefinitionTarget TargetName="Error\.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem CallDirection="Output" CallIndex="1" DataType="@f8498ea846014db1b6adb60063c8cb46" Id="277" Name="Modulation parameters" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Output" CallIndex="1" DataType="@6632569a3a80447aa49f55e5a602628d" Id="277" Name="Modulation parameters" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Cluster>
 					<Field1>0_0_0_0_</Field1>
@@ -770,7 +770,7 @@
 				<TypeDefinitionTarget TargetName="Modulation\ parameters\.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem DataType="@0240b17d80e44b96b92dd910f50fd839" Id="856" Name="Demodulation parameters_2" xmlns="http://www.ni.com/MocCommon">
+		<DataItem DataType="@6f309e076ddb44cfb2b8a950ecdaf61e" Id="856" Name="Demodulation parameters_2" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Cluster>
 					<Field1>
@@ -791,7 +791,7 @@
 				<TypeDefinitionTarget TargetName="Demodulation\ parameters\.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem CallDirection="Output" CallIndex="0" DataType="@0240b17d80e44b96b92dd910f50fd839" Id="902" Name="Demodulation parameters" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Output" CallIndex="0" DataType="@6f309e076ddb44cfb2b8a950ecdaf61e" Id="902" Name="Demodulation parameters" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Cluster>
 					<Field1>
@@ -812,7 +812,7 @@
 				<TypeDefinitionTarget TargetName="Demodulation\ parameters\.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem DataType="@f8498ea846014db1b6adb60063c8cb46" Id="968" Name="Modulation parameters_2" xmlns="http://www.ni.com/MocCommon">
+		<DataItem DataType="@6632569a3a80447aa49f55e5a602628d" Id="968" Name="Modulation parameters_2" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Cluster>
 					<Field1>0_0_0_0_</Field1>
@@ -831,7 +831,7 @@
 				<TypeDefinitionTarget TargetName="Burst\ Parameters\.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem CallDirection="Input" CallIndex="4" DataType="@db50d6f4ac3a497ab3a29a06771dc3e3" Id="1390" Name="Coding and CRC" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Input" CallIndex="4" DataType="@68bf2534b02f4d86bf6444da2fe83075" Id="1390" Name="Coding and CRC" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0_4080_</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="Coding\ and\ CRC\.gtype" />
@@ -937,8 +937,8 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="0240b17d80e44b96b92dd910f50fd839">
-			<Typedef TypedefName="Demodulation parameters.gtype" UnderlyingType="@e2770526dee74d86bd606b807b0f6f03" />
+		<p.TypeReference TypeId="6f309e076ddb44cfb2b8a950ecdaf61e">
+			<Typedef TypedefName="Demodulation parameters.gtype" UnderlyingType="@d856998a7a094986b5a13af753247ada" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="4e9bc905a5964244af2e1481b2f3637e">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
@@ -982,11 +982,11 @@
 		<p.TypeReference TypeId="14c02a3d95d049b7b84014b606afa103">
 			<Typedef TypedefName="Burst Parameters.gtype" UnderlyingType="@b92caa7cbb304801abacc7a2fae6beca" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="db50d6f4ac3a497ab3a29a06771dc3e3">
-			<Typedef TypedefName="Coding and CRC.gtype" UnderlyingType="@4fdaafd57607439a93e535773cc48656" />
+		<p.TypeReference TypeId="68bf2534b02f4d86bf6444da2fe83075">
+			<Typedef TypedefName="Coding and CRC.gtype" UnderlyingType="@b01d88bde59e44e98b077e01a8860d16" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="f8498ea846014db1b6adb60063c8cb46">
-			<Typedef TypedefName="Modulation parameters.gtype" UnderlyingType="@0c1b92ffebb24bd6942d5052b747e3f9" />
+		<p.TypeReference TypeId="6632569a3a80447aa49f55e5a602628d">
+			<Typedef TypedefName="Modulation parameters.gtype" UnderlyingType="@268813a26a0b443daf694bc2d2baf08f" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="5eda4f0707464f679eb7e675bd8ff05a">
 			<Enumeration>
@@ -1069,7 +1069,7 @@
 				</DataType>
 			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="e2770526dee74d86bd606b807b0f6f03">
+		<p.TypeReference TypeId="d856998a7a094986b5a13af753247ada">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="PSK system parameters">
@@ -1130,7 +1130,7 @@
 					</Field>
 					<Field FieldAccessPolicy="ReadWrite" Name="Coding and CRC">
 						<DataType>
-							<Typedef TypedefName="Coding and CRC.gtype" UnderlyingType="@4fdaafd57607439a93e535773cc48656" />
+							<Typedef TypedefName="Coding and CRC.gtype" UnderlyingType="@b01d88bde59e44e98b077e01a8860d16" />
 						</DataType>
 					</Field>
 				</Members>
@@ -1145,7 +1145,7 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="4fdaafd57607439a93e535773cc48656">
+		<p.TypeReference TypeId="b01d88bde59e44e98b077e01a8860d16">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Rate (k/n)">
@@ -1153,7 +1153,7 @@
 							<Enumeration>
 								<Members>
 									<EnumerationMember Value="0" Name="1/2" />
-									<EnumerationMember Value="1" Name="2/3" />
+									<EnumerationMember Value="1" Name="none" />
 								</Members>
 								<DataType>
 									<UInt16 />
@@ -1165,7 +1165,7 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="0c1b92ffebb24bd6942d5052b747e3f9">
+		<p.TypeReference TypeId="268813a26a0b443daf694bc2d2baf08f">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="PSK Parameters">
@@ -1217,7 +1217,7 @@
 					</Field>
 					<Field FieldAccessPolicy="ReadWrite" Name="Coding and CRC">
 						<DataType>
-							<Typedef TypedefName="Coding and CRC.gtype" UnderlyingType="@4fdaafd57607439a93e535773cc48656" />
+							<Typedef TypedefName="Coding and CRC.gtype" UnderlyingType="@b01d88bde59e44e98b077e01a8860d16" />
 						</DataType>
 					</Field>
 				</Members>

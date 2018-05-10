@@ -6,12 +6,13 @@ truncate coding if needed
 FILTERING ISI			
 Handle if no burst fetched				OK (warning generated in this case)
 handle sync boolean properly (RED)			OK
-build noise generation (complex)			OKish
+build noise generation (complex)			NOK
 Add noise, check error array to Modulation test.vi	Prepared finish if noise gen is fine
 implement BLER						OK
 implement BER (csúszó átlagolással)			OK
-2/3 to none @ Coding
+2/3 to none @ Coding					OK
 Add Feedforward tming recovery (Oerder+Meyer)
+Mod filter --Gauss
 
 -------Check:-------
 Complex Gardner
