@@ -4,3 +4,5 @@ Thesis.lvprojectcache
 Thesis.lvprojectcache
 Thesis.lvcodedb
 Thesis.lvprojectcache
+*.lvcodedb
+*.lvproject
