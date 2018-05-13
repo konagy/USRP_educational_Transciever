@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="1B5736C002142E2B70D9BDA523B97FB5" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="EF81E459FCB83620AA08AFA7203EA8B7" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -138,7 +138,7 @@
 			<MethodCall Bounds="525 -110 50 50" DomainName="NI.MocCommon" Id="2375" Target="Burst\ Building\.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-						<Parameter Id="L3" Desc="Sync Bits [#16]" />
+						<Parameter Id="L3" Desc="Sync Bits" />
 						<Parameter Id="L0" Desc="Input bit stream" />
 						<Parameter Id="L4" Desc="error in" />
 						<Parameter Id="L1" Desc="# Guard Symbols" />
@@ -146,16 +146,13 @@
 						<Parameter Id="R4" Desc="error out" />
 					</MethodDeclaration>
 				</p.MethodDeclaration>
-				<Terminal DataType="Int8[]" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Int8[]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Int8[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
-			<NumberToBooleanArray Bounds="395 -30 30 10" Id="2395" />
-			<BooleanToInteger Bounds="420 -30 30 10" Id="2396" />
-			<ToByteInteger Bounds="445 -30 30 10" Id="2398" />
 			<MethodCall Bounds="435 -110 50 50" DomainName="NI.MocCommon" Id="4240" Target="Convolutional\ Coder\.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -204,9 +201,6 @@
 			</NodeLabel>
 			<Wire Id="4137" Joints="N(2132:Value) h(5) B(1) N(2480:instance in) B(1) v(45) N(2047:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="4140" Joints="N(4456:Value) h(5) v(-30) N(2047:L1)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="2400" Joints="N(2398:8bit integer) h(40) v(-50) N(2375:L3)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="2397" Joints="N(2395:Boolean array) N(2396:Boolean)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="2399" Joints="N(2396:0, 1) N(2398:number)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Facade="WireInvisibleFacade" Id="4252" Joints="N(4250:Out) N(4241:L1)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="4253" Joints="N(4241:R4) N(4240:L4)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="4254" Joints="N(2475:R4) N(4241:L4)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -422,7 +416,6 @@
 			<Comment Bounds="890 95 437 15" Id="7920" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>-------------------------------------RECIEVER------------------------------------</p.Text>
 			</Comment>
-			<Wire Id="7940" Joints="N(4678:c2t0v) h(195) v(-60) N(2395:number)" xmlns="http://www.ni.com/PlatformFramework" />
 			<MethodCall Bounds="750 -110 50 50" DomainName="NI.MocCommon" Id="7942" Target="AWGN\ generation\.gvi" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -452,6 +445,7 @@
 				<p.Text>eb/n0 [dB of complex]</p.Text>
 			</NodeLabel>
 			<Wire Id="7955" Joints="N(7953:Value) h(645) v(130) N(7942:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="7962" Joints="N(4678:c2t0v) h(325) v(-110) N(2375:L3)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<TabControl BaseName="[string]Tab" Height="[float]691" Id="2192" IncludeInCapture="[bool]False" Label="[UIModel]2197" Left="[float]1004" MinHeight="[float]55" MinWidth="[float]60" SelectedIndex="{DataItemBinding Id=2190}" Top="[float]241" Width="[float]735" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
@@ -536,7 +530,7 @@
 							<Axis Adjuster="[RangeAdjuster]FitLoosely" Id="2204" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]2215" Orientation="[SMOrientation]Horizontal" Range="[IRange]0, 0.22, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 								<RangeLabeledDivisions Id="2215" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
 							</Axis>
-							<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="2205" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]2216" Orientation="[SMOrientation]Vertical" Range="[IRange]-8, 8, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+							<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="2205" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]2216" Orientation="[SMOrientation]Vertical" Range="[IRange]-2E-10, 2E-10, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 								<RangeLabeledDivisions Id="2216" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
 							</Axis>
 							<Plot HorizontalScale="[UIModel]2204" Id="2206" Label="[string]Mine" VerticalScale="[UIModel]2205" Visibility="[SMVisibility]Visible">
@@ -561,7 +555,7 @@
 							<Axis Adjuster="[RangeAdjuster]None" Id="262" Label="[string]Time" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]273" Orientation="[SMOrientation]Horizontal" Range="[IRange]-1, 1, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 								<RangeLabeledDivisions Id="273" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
 							</Axis>
-							<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="263" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]274" Orientation="[SMOrientation]Vertical" Range="[IRange]-3, 3, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
+							<Axis Adjuster="[RangeAdjuster]FitVisibleLoosely" Id="263" Label="[string]Amplitude" LabelVisibility="[SMVisibility]Visible" MajorDivisions="[UIModel]274" Orientation="[SMOrientation]Vertical" Range="[IRange]-7, 7, System.Double" ScaleKind="[RangeScaleKind]Linear" ValueType="[Type]Double" Visibility="[SMVisibility]Visible">
 								<RangeLabeledDivisions Id="274" LabelPresenter="[string]LVRelativeSeconds:0.######&gt;&gt;0.000E+0" />
 							</Axis>
 							<Plot HorizontalScale="[UIModel]262" Id="264" Label="[string]Plot" VerticalScale="[UIModel]263" Visibility="[SMVisibility]Visible">

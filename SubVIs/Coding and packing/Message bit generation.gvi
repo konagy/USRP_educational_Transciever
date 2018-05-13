@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="0D3F83A9C0175E0BB6062809ABBB19AA" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="BBDE8B25B01E8DAB7FD6F591E2A12F23" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -90,25 +90,25 @@
 								<Parameter Id="L2" Desc="PN sequence orger" />
 								<Parameter Id="L4" Desc="Error In" />
 								<Parameter Id="R0" Desc="bits out" />
-								<Parameter Id="R1" Desc="spectrum of bits out" />
+								<Parameter Id="R1" Desc="Histogram of bits out" />
 								<Parameter Id="R4" Desc="Error Out" />
 							</MethodDeclaration>
 						</p.MethodDeclaration>
 						<Terminal DataType="Int32" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@9689bef4272746dc831eb5ee855926fd" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@7246861a79254141bd5396a072e04171" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Int8[]" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="@0972aa5150324ffe9f09f739f3834a31" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="Error" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 					</MethodCall>
-					<Literal Bounds="15 120 105.773331 15" DataType="@9689bef4272746dc831eb5ee855926fd" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="2718" Label="2720" xmlns="http://www.ni.com/MocCommon">
+					<Literal Bounds="35 120 75 15" DataType="@7246861a79254141bd5396a072e04171" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="2722" xmlns="http://www.ni.com/MocCommon">
 						<p.Data>2</p.Data>
-						<EnumBehavior Id="2719" />
+						<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+							<TypeDefinitionTarget TargetName="Sequency\ order\.gtype" />
+						</p.TypeDefinitionTargets>
+						<EnumBehavior Id="2723" />
 					</Literal>
-					<Wire Id="2721" Joints="N(2718:Out) N(2712:L2)" xmlns="http://www.ni.com/PlatformFramework" />
-					<NodeLabel AttachedTo="2718" Bounds="15 120 0 0" Id="2720" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-						<p.Text>PN sequence orger</p.Text>
-					</NodeLabel>
+					<Wire Id="2724" Joints="N(2722:Out) N(2712:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 245 190" Id="2216" Pattern="Error">
 					<Wire Id="2688" Joints="N(2217:2216) N(2651:2216)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -220,17 +220,8 @@
 		</IconTable>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="9689bef4272746dc831eb5ee855926fd">
-			<Enumeration>
-				<Members>
-					<EnumerationMember Value="0" Name="galois-6" />
-					<EnumerationMember Value="1" Name="galois-8" />
-					<EnumerationMember Value="2" Name="galois-10" />
-				</Members>
-				<DataType>
-					<UInt16 />
-				</DataType>
-			</Enumeration>
+		<p.TypeReference TypeId="7246861a79254141bd5396a072e04171">
+			<Typedef TypedefName="Sequency order.gtype" UnderlyingType="@7a8c599503f542dc943a86b14730d803" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="0972aa5150324ffe9f09f739f3834a31">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
@@ -247,6 +238,18 @@
 					</Field>
 				</Members>
 			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="7a8c599503f542dc943a86b14730d803">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="6" />
+					<EnumerationMember Value="1" Name="8" />
+					<EnumerationMember Value="2" Name="10" />
+				</Members>
+				<DataType>
+					<UInt16 />
+				</DataType>
+			</Enumeration>
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 </SourceFile>

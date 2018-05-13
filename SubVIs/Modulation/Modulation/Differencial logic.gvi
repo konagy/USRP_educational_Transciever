@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7DCB0E3FFCACE178C034DC27F812A28E" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="A4977C8765B39AB68FF07C0D0C2239A9" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -158,49 +158,9 @@
 				<p.Text>Error Out</p.Text>
 			</NodeLabel>
 			<Wire Id="130" Joints="N(131:76) N(55:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DisableStructure Bounds="375 390 325 230" Id="167" Selected="169" UserSelectorBounds="109 0 107 17">
-				<DisableStructure.DisableDiagram Bounds="5 5 315 220" Id="168" Pattern="Enabled" />
-				<DisableStructure.DisableDiagram Bounds="5 5 315 220" Id="169" Pattern="Disabled">
-					<ForLoop Bounds="28 18 265 170" DiagramId="141" Id="140">
-						<LoopIteration Bounds="5 140 15 15" Id="145" />
-						<IsEqual Bounds="65 25 30 30" Id="146" />
-						<CaseStructure Bounds="115 35 105 70" Default="158" Id="147" Selected="159" UserSelectorBounds="8 0 88 17">
-							<CaseStructure.Case Bounds="5 5 95 60" Id="158" Pattern="False">
-								<Wire Id="163" Joints="N(161:158) N(162:158)" xmlns="http://www.ni.com/PlatformFramework" />
-							</CaseStructure.Case>
-							<CaseStructure.Case Bounds="5 5 95 60" Id="159" Pattern="True">
-								<Negate Bounds="35 15 30 30" Id="164" />
-								<Wire Id="165" Joints="N(161:159) N(164:x)" xmlns="http://www.ni.com/PlatformFramework" />
-								<Wire Id="166" Joints="N(164:-x) N(162:159)" xmlns="http://www.ni.com/PlatformFramework" />
-							</CaseStructure.Case>
-							<CaseStructure.Selector Bounds="-4 45 13 10" Docking="Left" Id="160" Terminals="147=154, 158, 159" />
-							<CaseStructure.Tunnel Bounds="-4 30 13 10" Docking="Left" Id="161" Terminals="147=156, 158=163, 159=165" />
-							<CaseStructure.Tunnel Bounds="96 30 13 10" Docking="Right" Id="162" Terminals="147=153, 158=163, 159=166" />
-						</CaseStructure>
-						<Literal Bounds="20 40 39.5 16" DataType="Int8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="148" Label="151" xmlns="http://www.ni.com/MocCommon">
-							<p.Data>1</p.Data>
-							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-						</Literal>
-						<FeedbackNode Bounds="145 125 30 20" EnableTerminalVisible="False" Id="149" />
-						<Literal Bounds="15 110 55 16" DataType="ComplexDouble" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="150" xmlns="http://www.ni.com/MocCommon">
-							<p.Data>0x3FF0000000000000;0x0</p.Data>
-							<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-						</Literal>
-						<NodeLabel AttachedTo="148" Bounds="20 40 0 0" Id="151" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-							<p.Text>y</p.Text>
-						</NodeLabel>
-						<Wire Id="152" Joints="N(143:i0) N(146:x)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="153" Joints="N(162:147) h(11) B(1) v(-40) N(144:i0) B(1) v(65) N(149:input)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="154" Joints="N(146:x = y?) h(10) v(45) N(160:147)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="155" Joints="N(148:Out) N(146:y)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="156" Joints="N(149:output) h(-55) v(-65) N(161:147)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Wire Id="157" Joints="N(150:Out) h(90) N(149:initial value)" xmlns="http://www.ni.com/PlatformFramework" />
-						<LoopCount Bounds="1 1 15 15" Docking="Left" Id="142" Terminals="140, 141" />
-						<LoopTunnel AutoIndex="True" Bounds="-5 27 13 10" Docking="Left" Id="143" Terminals="o0, i0=152" TunnelMode="0" />
-						<LoopTunnel AutoIndex="True" Bounds="255 27 13 10" Docking="Right" Id="144" Terminals="o0, i0=153" TunnelMode="0" />
-					</ForLoop>
-				</DisableStructure.DisableDiagram>
-			</DisableStructure>
+			<Comment Bounds="320 385 480 65" Id="197" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"1. The for loop takes evry bit one by one.\r\n2. If the corresponding bit is '0', the output will be the same. If it is '1', then it will be delayed by 180 degrees. The shift register is there so the VI will know its state after each bit, so the reference is provided. "</p.Text>
+			</Comment>
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<Cluster BaseName="[string]Error Out" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]165" Id="56" Label="[UIModel]63" Left="[float]200" Top="[float]200" Value="{DataItemBinding Id=54}" Width="[float]138" p4:ControlDefinitionChecksum="zmhsRUGWDTf2PX9vKcqFsw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
